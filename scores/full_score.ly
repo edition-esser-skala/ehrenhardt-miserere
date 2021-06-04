@@ -21,7 +21,7 @@
       title = "M I S E R E R E"
     }
     \paper { indent = 3\cm }
-    % \tocSection "1" "Miserere"
+    \tocSection "1" "Miserere"
     \score {
       <<
         \new StaffGroup <<
@@ -95,7 +95,7 @@
         \new FiguredBass { \MiserereBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 65 }
     }
   }
 }
