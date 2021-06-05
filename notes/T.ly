@@ -237,6 +237,56 @@ QuoniamTenoreLyrics = \lyricmode {
   per. %126 finis
 }
 
+TibiTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 4/4 \autoBeamOff \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*64 %200
+    \mvTr c8\pE^\solo c4( d16[ es)] c8 c4( d16[ es)]
+    d16([ h)] a([ g)] f'4 es r
+    g f e16([ d)] c8 r b
+    des8. des16 c8 b as([ g)] f4
+    des' des des8 h c([ f)] %205
+    as,4 g8 g fis4. d'8
+    g,4 a b16[ a g fis] g4
+    g'16[ f! es d] es4~ es16[ d c b] a[ g fis e]
+    d8[ d'] c8.([\trill b32 c)] b8.([\trill a32 b)] a8.([\trill g32 a)]
+    \once \tieDashed g2~ g8[ a16 b] c[ d e fis] %210
+    g[ fis e? d] g[ fis e? d] c8[^\critnote b16 a] g8 a
+    b4( a) g r
+    R1*4 %216
+    r8 es' d([ cis)] d4 d8 d
+    es!2\trill d4 d8 d
+    c2_(\trill b16[ a g fis] g[ a]) b c
+    d([ c b a]) g8 g' b, es d c %220
+    b4( a) g r
+    R1*30 %251
+    R1\fermata \bar "||" %252 finis
+  }
+}
+
+TibiTenoreLyrics = \lyricmode {
+  Ec -- ce __ e -- nim __ %201
+  ve -- ri -- ta -- tem
+  di -- le -- xi -- sti, in --
+  cer -- ta et oc -- cul -- ta
+  sa -- pi -- en -- ti -- ae __ %205
+  tu -- ae ma -- ni -- fe --
+  sta -- _ _ _
+  _ _ _
+  _ _ _ _
+  _ _ %210
+  _ _ _ _ sti
+  mi -- hi,
+
+  in -- cer -- ta et oc -- %217
+  cul -- ta sa -- pi --
+  en -- ti -- ae
+  tu -- ae ma -- ni -- fe -- sta -- sti %220
+  mi -- hi. %221 fini
+}
+
 % TenoreNotes = {
 %   \relative c' {
 %     \clef "treble_8"

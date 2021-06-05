@@ -216,6 +216,40 @@ QuoniamBassoLyrics = \lyricmode {
   per. %126 finis
 }
 
+TibiBassoNotes = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \autoBeamOff \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*104 %240
+    r2 r4 \mvTr b'\pE^\solo
+    b8 as16 g as8([ b16)] as g8 es c'4~
+    c16[ d, f a] b4~ b16[ c, es g] as4~
+    as16[ b, d f] g8 f16 es f8 g16([ a)] b4~
+    b as8 g16([ f)] g8 c, c' c %245
+    c[ d16 c] b4~ b16[ as32 b c16 b] as4~
+    as16[ g32 as b16 as] g[ f] es8 f b,16 b f'8 f
+    ges4~ ges16[ f f es] a!2
+    b4 es8 d16 c b4( b,)
+    es2 r %250
+    R1
+    R\fermata \bar "||" %252 finis
+  }
+}
+
+TibiBassoLyrics = \lyricmode {
+  Au --  %241
+  di -- tu -- i me -- o da -- bis gau --
+  _ _
+  _ di -- um et lae -- ti --
+  _ ti -- am, et ex -- sul -- %245
+  ta -- _ _
+  _ bunt os -- sa hu -- mi -- li --
+  a -- _
+  ta, hu -- mi -- li -- a --
+  ta. %250 finis
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

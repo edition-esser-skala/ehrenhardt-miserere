@@ -44,3 +44,19 @@ MiserereViola = {
     g1\fermata \bar "||" %38 finis
   }
 }
+
+TibiViola = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 4/4 \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*102 %238
+    r2 d4\fE c8 c
+    b b b es d d c c %240
+    b4 f'8 f f4 r
+    R1*8 %249
+    g8\fE g f f es4 b'8 c %250
+    f,2 r
+    r8 b b b g4 r\fermata \bar "||" %252 finis
+  }
+}

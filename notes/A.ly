@@ -177,6 +177,58 @@ QuoniamAltoLyrics = \lyricmode {
   per. %126 finis
 }
 
+TibiAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*94 %230
+    \mvTr es8.([\pE^\solo f16)] g8 as? b es, as4
+    g g8 g g[ f16 g] f8[ es16 f]
+    es8[ d16 es] d8[ c16 d] c8^\critnote b es es
+    es[ d16 es] f8.[ es16] d[ es es f] f[ g g a]
+    a[ b a b] c8 f, es g f es %235
+    d([ es)] f4 g~ g16[ es] f([ g])
+    f4~ f16[ d es f] es4~ es16[ c d es]
+    d[ es c d] es[ f d es] f8[ g16 a] b8 g
+    d'4( c) b r
+    R1*2 %241
+    r4 f f8 es16 d es8 f16([ es)]
+    d4 g c,( f8) f
+    b,4 es8 es es4( d8[ c16 b]
+    c8) d16([ es]) f4 f8([ g16 f)] es8 g %245
+    f4~ f16[ d g8] es4~ es16[ c f8]
+    d4 es es8 es16 es d8 d
+    es1\trill
+    d4 g8 f16 es es([ f] g4 f8)
+    es2 r %250
+    R1
+    R\fermata \bar "||" %252 finis
+  }
+}
+
+TibiAltoLyrics = \lyricmode {
+  A -- sper -- ges me hys -- so -- %231
+  po, et mun -- da -- _
+  _ _ _ bor, et la --
+  va -- _ _ _
+  _ _ bis me, et su -- per %235
+  ni -- vem de -- al --
+  ba -- _
+  _ _ _ _
+  _ _ bor.
+
+  Au -- di -- tu -- i me -- o %242
+  da -- bis gau -- di --
+  um et lae -- ti --
+  ti -- am, et __ ex -- sul -- %245
+  ta -- _
+  _ bunt os -- sa hu -- mi -- li --
+  a --
+  ta, hu -- mi -- li -- a --
+  ta. %250 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

@@ -44,3 +44,26 @@ MiserereViolinoII = {
     c1\fermata \bar "||" %38 finis
   }
 }
+
+TibiViolinoII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*95 %231
+    r4 r8 g'\p g f4 es8~
+    es d4 c b8 r es
+    es d16 es f8 es d4 r
+    r2 r4 es %235
+    d8 es f4 g2
+    f es
+    d r
+    r f'8\f f4 g16 a
+    b8 f4 g16 a b f g f es es f es %240
+    d es f b, b8 a b b, r4
+    R1*8 %249
+    es'8\f es~ es16 g32 as b16 g es8 es~ es16 g32 as b16 g %250
+    es d32 es f16 d b as32 b c16 as f d32 es f16 d b8 as'
+    g16 b es,4 d8 es4 r\fermata \bar "||" %252 finis
+  }
+}

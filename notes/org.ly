@@ -293,6 +293,249 @@ QuoniamBassFigures = \figuremode {
   <_!>1. %136 finis
 }
 
+TibiOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \tempoTibi
+      \set Score.currentBarNumber = #137
+    \mvTr es8\fE-\solo es' d4 c g
+    as b es, r
+    es des c r
+    c c' r8 f, f, f' %140
+    f, f'16 es d8 c b4 r
+    b b' r8 es, f g
+    as as, a' f b b, d' b
+    es c b b, r c b b'
+    g as b b, es, b' es4 %145
+    es\pE d c g
+    as b8 c16 d es8\fE b es,4
+    c'' g as8 b c d
+    es,4 es'2 d4\pE
+    c r c, r %150
+    r8 f f, f' f,4 r
+    r8 b' b, b' b,4 r
+    r8 es' es, es' es,4 d
+    c8 c' c, c' c,4 r
+    r8 d' d, d' b,4. c8 %155
+    d4 d, r8 b'' a g
+    fis e d4 r2
+    c4 c'2 b8 c
+    d4 d, r8 g\fE g, g'
+    r c c, c' c4 b16 a g8 %160
+    e4 r d8 d'16 c b8 a
+    g es'! d d, g, b16 d g4
+    R1
+    h4\pE g r8 c c, c'
+    a4 a, r8 b' b, b' %165
+    d,4 c b2
+    r8 b' b, b' b,4 r
+    r8 es c'4. d,8 b'4~
+    b8 c, a'4 r8 b b, b'
+    b,4 r r2 %170
+    f'4 f,8 f'16 es d!4 r
+    r8 es f f, b d16 f b4
+    es,\fE r e r
+    f8 c' es, c' d, b' c, a'
+    b,4 r r8 b' b, b' %175
+    b,4 r r2
+    R1
+    r8 g' f f, b f' b4
+    es,\pE d c g
+    as b es8\fE g16 b es8 es, %180
+    c' b16 as g8 es as b c d
+    es4 r r8 es es, es'
+    e,4\pE r e r
+    e r r8 f f, f'
+    as4 r f r %185
+    r8 f f, f' es! es' es, es'
+    es,4 g as r
+    a r r8 b b,4
+    r8 b' b,4 r8 b' b,4
+    r8 b' c d es2 %190
+    r8 es es, es' a,!2
+    b4 es, b' b,
+    r8 es g b es2
+    r b4 b,
+    es\fE des c8 c' c, c' %195
+    c,4 r r8 f f, f'
+    f, es'! d c b b' b ,b'
+    b,4 r r8 es f g
+    as as, a'4 b8 b, c d
+    r es' b b, es4 r8 d %200
+    c\pE c' b!4 as es
+    f g r8 c\fE c, c'
+    c,4 r r8 c'\pE c, c'
+    e,4 r r8 f f, f'
+    f,4 g' as4. f8 %205
+    c4 c' c,\fermata r
+    b' a! g r
+    c, r c' r
+    c8 b a d, g d fis d
+    r es d c b2 %210
+    b r4 b8 c
+    d4 d, r8 g'\fE g, g'
+    c,4 r c' r
+    d,8 d' d, c' d, b' d, a'
+    g es d c b4. a8 %215
+    g4 r r2
+    r4 g'\pE fis8 e d \once \tieDashed g~
+    g c, f4. b,8 \once \tieDashed es4~
+    es8 a, d4 g, r
+    r r8 es' d c b c %220
+    d2 g,4 r
+    es'8\fE es' d4 c g
+    as b es, r
+    es des c r
+    c c' r8 f, f, f' %225
+    f, f'16 es d8 c b4 r
+    b b' r8 es, f g
+    as as, a' f b b, d' b
+    es c b b, r c b b'
+    g as b b, es, b' es4 %230
+    es\pE es' d8 es c d
+    es es, r b' a!4 g
+    f es d c8 b
+    a4 r8 a' b c, d es
+    f4 r8 f g4 a %235
+    b r8 b, es es' r es,
+    d d' r d, c c' r c,
+    b4 r8 c d4 r8 es
+    f4 f, b8\fE b' a a
+    g d d c b b'4 a8 %240
+    b b, f' f, b4 r
+    c\pE r8 d es4 r8 f
+    g4 r8 g es4 r8 f
+    d4 r8 es b' b, r4
+    f'8 f, r4 c''8 c, r es %245
+    d f g g, c es f f,
+    r b' es, es, b'4 r
+    a!8 a a a c c c c
+    b as g as b2
+    es,8\fE es' d d c c' g as %250
+    b2 r
+    es,8 es, b'' b, es,4 r\fermata \bar "||" %252 finis
+  }
+}
+
+TibiBassFigures = \figuremode {
+  r4 <6> <_-> <6> %137
+  <6 5> <7>2.
+  <5>4 <6> <_!>2
+  q r8 <5 [_-]>4. %140
+  r4 <6>2.
+  r2. <6- [_-]>8 <6 5->
+  <3>4 <6 5> <_!> <6 [5-]>
+  r <4>8 <3> r4 <4>8 <3>
+  <6> <5> \bo <[6] 4> \bc <[5] 3> r2 %145
+  r4 <6>2 q4
+  \bo <[6] 5> \bc <[7-]>2.
+  r4 <6> <[6 5]> <6->8 <\t>
+  r2. <6>4
+  <_!>2 <[9-]  _!> %150
+  \bo <[9 _-]>4 \bc <[8 \t]>2.
+  r8 <5>2..
+  \bo <[9]>4 <8>2 \bc <[\t]>4
+  r1
+  r8 <_+>4. <6>4. <5>8 %155
+  \bo <[6] 4>4 \bc <[5] _+> r8 <6> \bo <[5! _+]> \bc <[\t \t]>
+  <6> <6\\> <[_+]>2.
+  r4 <5> <4+ 2> <6>
+  <4> <_+>2.
+  r2 <4+ 2>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %160
+  <6\\>2 \bo <[_+]>4 \bc <[6]>
+  r <_+>2.
+  r1
+  <7->4 \bo <[8 6 _!]>8 \bc <[7 5 \t]> r2
+  <5->1 %165
+  <6>4 q2.
+  r1
+  r4 <5> <4> <5>
+  <4> <5> r8 <3>4.
+  <[_-]>1 %170
+  \bo <[6- 4]>4 \bc <[5 3]> <6>2
+  r8 \bo <[7 5]> \bc <[5 3]>2.
+  r2 <6>
+  <5>4 <6> q q
+  r1 %175
+  r
+  r
+  r4 \bo <[4]>8 \bc <[3]> r2
+  r4 <6> <8> <6>
+  \bo <[6 5]> \bc <[7- \l]>2. %180
+  r4 <6> <[6 5]> <6->8 <\t>
+  r1
+  <7- 5>2 <\t \t>
+  q2 r8 \bo <[_-]>4.
+  <6>2 \bc <[_-]> %185
+  r8 <[6 _-]>2..
+  r4 <6>2.
+  <6>1
+  r8 <6 [4]>2 <7- 5>4.
+  r4 \bo <[6-]>8 \bc <[\t]> r2 %190
+  r8 <[6 4! _-]>4. <[6]>4 <5->
+  r2 \bo <[6] 4>4 \bc <[5] 3>
+  r1
+  r2 \bo <[6] 4>4 \bc <[5] 3>
+  r <6> <[_!]>2 %195
+  r2 r8 <[_-]>4.
+  r8 <6> q q r2
+  r2. <6->8 <\t>
+  <5>4 <6 5> \bo <[_!]> <6->8 \bc <[\t]>
+  r4 \bo <[6] 4>8 \bc <[5] 3> r4. <6!>8 %200
+  r4 <4 2> <5> <6>
+  <6 5 [_-]> <4>8 <_!> r2
+  r2 r8 <[_!]>4.
+  <7- 5>4 <6>8 <5> r <_->4.
+  <6->4 <5-> <4-> <3>8 <[_-]> %205
+  \bo <6- [4]>4 \bc <5 [_!]> <6! 4+ 2>2
+  <6>4 <6\\>2.
+  <5>1
+  \bo <[4+]>8 \bc <[6]> <7> <7 _+> <_->4 <[6]>
+  r2 <6> %210
+  <\t>2. \bo <[6]>8 \bc q
+  \bo <[6 4]>4 <5 \t>8 \bc <[\t _+]> r2
+  r <[4+ 2]>
+  <_+>4 <\t> <6 4> <[5] _+>
+  r8 <6> q q q4. <6\\>8 %215
+  r1
+  r4 <[6!] 4+ 2> <6>8 <6\\> <[_+]>4
+  <6 [4]> <7-> <6 [4]> <7>
+  <6 [4]> <7 _+>2.
+  r4. <6>8 q q q <5> %220
+  \bo <[6] 4>4 \bc <[5] _+>2.
+  r4 <6>2 q4
+  \bo <[6 5]> \bc <[7- \l]>2.
+  r4 <6> <_!>2
+  q2 r8 <[_-]>4. %225
+  r4 \bo <[6]>8 \bc <[6!]> r2
+  r2. <6- [_-]>8 <[6 5-]>
+  <3>4 <6 5>2 <6 [5-]>4
+  r \bo <[6] 4>8 <5 3>4. <6 4>8 \bc <[5] 3>
+  <6>4 \bo <[6] 4>8 \bc <[5] 3> r2 %230
+  r <6>4 <6->8 <\t>
+  r4. <[6]>8 <7> <6> <7> <6>
+  <7> <6> <7> <6> \bo <[7]> <6> <5> \bc <[\t]>
+  <6 [5]>2 r8 <[6]> <6>4
+  r2 <6>4 <[6 5]> %235
+  \bo <[9]> \bc <[8]> <7>4. <6>8
+  <7>4. <6>8 <7>4. <6>8
+  r4. <[6]>8 <6>2
+  \bo <[6] 4>4 \bc <[5] 3>2 <6>4
+  <_->8 <6>4 <[6]>4. <2>8 <6> %240
+  r4 \bo <[6] 4>8 \bc <[5] 3> r2
+  \bo <[7]>8 <6->4 <\t>8 <9> <8>4 \bc <[_-]>8
+  <4>4. \bo <[_- \l]>8 <6 5>4. <_->8
+  <6 5->2 <4>4 <3>
+  <4> <_-> <4> <3> %245
+  <7> q q <7 _->
+  r8 <7->4. <4>4 <3>
+  <7->2 <6! 5->
+  <5 3>8 <\t \t> <10 8> <8 6>16 <7 5> <6 4>4. \bc <[5 3]>8
+  r4 \bo <[6 \l]> <5> <6> %250
+  <4>8 <3>2..
+  r4 <6 4>8 \bc <[5 3]> r2 %252 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

@@ -98,44 +98,111 @@
   %     \midi { \tempo 4 = 65 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     title = "Q U O N I A M   I N I Q U I T A T E M"
+  %   }
+  %   \tocSubsection "1.2" "Quoniam iniquitatem"
+  %   \paper { systems-per-page = #3 }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \QuoniamAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \QuoniamTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \QuoniamBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \QuoniamOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuoniamBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 110 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "Q U O N I A M   I N I Q U I T A T E M"
+      subtitle = "T I B I   S O L I   P E C C A V I"
     }
-    \tocSubsection "1.2" "Quoniam iniquitatem"
-    \paper { systems-per-page = #3 }
+    \tocSubsection "1.3" "Tibi soli peccavi"
     \score {
       <<
+        \new Staff {
+          \set Staff.instrumentName = \markup \center-column { "cor da" "caccia" "(Es)" }
+          % \transpose c es
+          \TibiCorno
+        }
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \TibiViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \TibiViolinoII
+            }
+          >>
+          \new Staff {
+            \set Staff.instrumentName = "vla"
+            \TibiViola
+          }
+        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \QuoniamAltoNotes }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \TibiSopranoNotes }
           }
-          \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
+          \new Lyrics \lyricsto Soprano \TibiSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \TibiAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \TibiAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \QuoniamTenoreNotes }
+            \new Voice = "Tenore" { \dynamicUp \TibiTenoreNotes }
           }
-          \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TibiTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \QuoniamBassoNotes }
+            \new Voice = "Basso" { \dynamicUp \TibiBassoNotes }
           }
-          \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
+          \new Lyrics \lyricsto Basso \TibiBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \QuoniamOrgano
+            \TibiOrgano
           }
         >>
-        \new FiguredBass { \QuoniamBassFigures }
+        \new FiguredBass { \TibiBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 110 }
+      \midi { \tempo 4 = 65 }
     }
   }
 }

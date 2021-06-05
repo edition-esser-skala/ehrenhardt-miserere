@@ -93,6 +93,104 @@ MiserereSopranoLyrics = \lyricmode {
   me. %36 finis
 }
 
+TibiSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoTibi
+      \set Score.currentBarNumber = #137
+    R1*9 %145
+    \mvTr es'8\pE^\solo es4( f16[ g)] es8 es4( f16[ g)]
+    f([ d c b)] as'4 g r
+    R1
+    r2 g4 f
+    e16([ d)] c4 b8 des?4.( c16[ b] %150
+    as?8[ g]) f4 f' es
+    d16([ c)] b4. as8 c4_( b16[ as]
+    g8[ f]) es4 es' es
+    es8([ d)] c c c([ h)] c c
+    fis2 g8 f16([ es)] d8 c %155
+    b4( a) g cis
+    d2 b'16[ a g fis] g[ f es d]
+    es[ d c b] a[ g fis e?] d8 cis' d16([ b)] a([ g)]
+    g4( \grace b8 a4\trill) \appoggiatura a8 g4 r
+    R1*3 %162
+    d'8 d d d d16([ c h a)] g4
+    r8 as'([ g)] f es d c4
+    r8 g'([ f]) es d c b4 %165
+    r f' f2
+    f8 f f f f2
+    g16[ a g f] es[ d es8] f16[ g f es] d[ c d8]
+    es16[ f es d] c[ b c8] d16[ b a b] b'4
+    des,16[ b a b] des[ b a b] b'[ as? ges? f] es[ des c b] %170
+    des4 c b16[ a! g! f] b[ a g f]
+    d'!4 c\trill b r
+    R1*6 %178
+    es8 es4 f16 g es8 es4 f16 g
+    f([ d c b] as'8.) as16 g4 r %180
+    R1*2
+    des8. des16 des8 des des8. c16 b8 b
+    e4. e8 f4 r
+    c8. c16 c8 c c8. b16 as8 as %185
+    \appoggiatura es' d4.\trill d8 es4 r
+    g8([ f)] es es es([ d)] c4
+    r8 g'([ f es)] d16[ f d a] b4\trill
+    es16[ g es a,] b4\trill f'16[ as f a,?] b4\trill
+    b' as g2 %190
+    ges f4 es
+    d16[ c b8] g'!16[^\critnote f es8] es4 f
+    es es es16[ d c b] es[ d c b]
+    g'8[( f16 es] d8) es g,4( f)
+    es r r2 %195
+    R1*56 %251
+    R1\fermata \bar "||" %252 finis
+  }
+}
+
+TibiSopranoLyrics = \lyricmode {
+  Ti -- bi __ so -- li __ %146
+  pec -- ca -- vi,
+
+  ti -- bi
+  so -- li pec -- ca -- %150
+  vi, ti -- bi
+  so -- li pec -- ca --
+  vi, ti -- bi
+  so -- li pec -- ca -- vi, et
+  ma -- lum co -- ram te %155
+  fe -- ci, et
+  ma -- _ _
+  _ _ lum co -- ram te
+  fe -- ci;
+
+  ut iu -- sti -- fi -- ce -- ris %163
+  in ser -- mo -- ni -- bus,
+  in ser -- mo -- ni -- bus, %165
+  et vin --
+  cas cum iu -- di -- ca --
+  _ _ _ _
+  _ _ _ _
+  _ _ _ _ %170
+  _ _ _ _
+  _ _ ris.
+
+  Ec -- ce e -- nim in in -- i -- qui -- %179
+  ta -- ti -- bus, %180
+
+  in in -- i -- qui -- ta -- ti -- bus con -- %183
+  cep -- tus sum,
+  in in -- i -- qui -- ta -- ti -- bus con -- %185
+  cep -- tus sum,
+  et in pec -- ca -- tis
+  con -- ce -- _
+  _ _ _ _
+  _ _ pit %190
+  ma -- _ _
+  _ _ _ ter
+  me -- a, __ _ _
+  ma -- ter me --
+  a. %195 finis
+}
+
 % SopranoNotes = {
 %   \relative c' {
 %     \clef treble
@@ -105,17 +203,6 @@ MiserereSopranoLyrics = \lyricmode {
 % }
 
 
-
-% Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-% ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
-% Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-% et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-% Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-% in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-% A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-% la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
-% Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-% et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
 % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
 % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
 % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
