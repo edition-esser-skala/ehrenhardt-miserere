@@ -93,6 +93,90 @@ MiserereAltoLyrics = \lyricmode {
   me. %36 finis
 }
 
+QuoniamAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/2 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #39
+    R1.*53 %91
+    \mvTr d4.\pE^\solo e8 f4 g a b
+    b( a8[ gis)] a1
+    a4( g8[ fis] g4 a8[ b]) a4 g
+    fis2 d d'4 d %95
+    d c8[ b] a[ g fis e] d4 c'
+    c( b g a) h2
+    c4 b8[ a] g[ f e d] c4 b'
+    b( a f g) a2
+    b1 d,2 %100
+    c c' a
+    g g es
+    d d b'4 b
+    a2 a4 g fis2
+    g d4( c) h2 %105
+    c( g'4 f) e2
+    f( c'4 b) a2
+    b4 b,8[ c] d4 es f g
+    g f8[ e] f1~
+    f4 es8[ d] es4 f8[ g] f4 es %110
+    d2. c4 d es
+    c2. b4 c d
+    b2^\critnote g'1
+    f f2
+    es1 es2 %115
+    d4. e8 fis4 g a b~
+    b a8[ gis] a1
+    a4( g8[ fis] g4) a8([ b)] a4 g
+    fis2( g a)
+    d,1. %120
+    r4 a' fis1\trill
+    g1.
+    d4. e8 fis4 fis g4( a)
+    d,2 g4 g2( fis4)
+    g g g2( fis) %125
+    g1.
+    R1.*9 %135
+    R1.\fermata \bar "||" %136 finis
+  }
+}
+
+QuoniamAltoLyrics = \lyricmode {
+  Quo -- ni -- am in -- i -- qui -- %92
+  ta -- tem
+  me -- am co --
+  gno -- sco, et pec -- %95
+  ca -- _ _ _ tum
+  me -- um
+  con -- _ _ _ tra
+  me __ est
+  sem -- _ %100
+  _ per, est
+  sem -- per, est
+  sem -- per, et pec --
+  ca -- _ _ _
+  tum me -- um %105
+  con -- tra
+  me __ est
+  sem -- _ _ _ _ _
+  _ _ _
+  _ _ _ _ _ %110
+  per, sem -- _ _
+  _ _ _ _
+  _ per,
+  con -- tra
+  me pec -- %115
+  ca -- _ _ _ _ _
+  _ tum,
+  con -- tra me est
+  sem --
+  per, %120
+  est sem --
+  per,
+  con -- tra me est sem --
+  per, est sem --
+  per, est sem -- %125
+  per. %126 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

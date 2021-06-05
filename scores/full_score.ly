@@ -16,86 +16,126 @@
 #(set-global-staff-size 15.87)
 
 \book {
+  % \bookpart {
+  %   \header {
+  %     title = "M I S E R E R E"
+  %   }
+  %   \paper { indent = 3\cm }
+  %   \tocSection "1" "Miserere"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "Trombone"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "I"
+  %             \MiserereTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "II"
+  %             \MiserereTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "Violino"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "I"
+  %             \MiserereViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "II"
+  %             \MiserereViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "Viola"
+  %           \MiserereViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \SopranoIncipit
+  %           \override Staff.InstrumentName.self-alignment-Y = ##f
+  %           \override Staff.InstrumentName.self-alignment-X = #RIGHT
+  %           \new Voice = "Soprano" { \dynamicUp \MiserereSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \MiserereSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \AltoIncipit
+  %           \override Staff.InstrumentName.self-alignment-Y = ##f
+  %           \override Staff.InstrumentName.self-alignment-X = #RIGHT
+  %           \new Voice = "Alto" { \dynamicUp \MiserereAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \MiserereAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \TenoreIncipit
+  %           \override Staff.InstrumentName.self-alignment-Y = ##f
+  %           \override Staff.InstrumentName.self-alignment-X = #RIGHT
+  %           \new Voice = "Tenore" { \dynamicUp \MiserereTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \MiserereTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "Basso"
+  %           \new Voice = "Basso" { \dynamicUp \MiserereBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \MiserereBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
+  %           % \transpose c c,
+  %           \MiserereOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \MiserereBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 65 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "M I S E R E R E"
+      title = "Q U O N I A M   I N I Q U I T A T E M"
     }
-    \paper { indent = 3\cm }
-    \tocSection "1" "Miserere"
+    \tocSubsection "1.2" "Quoniam iniquitatem"
+    \paper { systems-per-page = #3 }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "Trombone"
-            \new Staff {
-              \set Staff.instrumentName = "I"
-              \MiserereTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "II"
-              \MiserereTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
-            \set GrandStaff.instrumentName = "Violino"
-            \new Staff {
-              \set Staff.instrumentName = "I"
-              \MiserereViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "II"
-              \MiserereViolinoII
-            }
-          >>
-          \new Staff {
-            \set Staff.instrumentName = "Viola"
-            \MiserereViola
-          }
-        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
-            \new Voice = "Soprano" { \dynamicUp \MiserereSopranoNotes }
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \QuoniamAltoNotes }
           }
-          \new Lyrics \lyricsto Soprano \MiserereSopranoLyrics
+          \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
-            \new Voice = "Alto" { \dynamicUp \MiserereAltoNotes }
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \QuoniamTenoreNotes }
           }
-          \new Lyrics \lyricsto Alto \MiserereAltoLyrics
+          \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
-            \new Voice = "Tenore" { \dynamicUp \MiserereTenoreNotes }
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \QuoniamBassoNotes }
           }
-          \new Lyrics \lyricsto Tenore \MiserereTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \MiserereBassoNotes }
-          }
-          \new Lyrics \lyricsto Basso \MiserereBassoLyrics
+          \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \MiserereOrgano
+            \QuoniamOrgano
           }
         >>
-        \new FiguredBass { \MiserereBassFigures }
+        \new FiguredBass { \QuoniamBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 65 }
+      \midi { \tempo 2 = 110 }
     }
   }
 }
