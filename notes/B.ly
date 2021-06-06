@@ -250,6 +250,55 @@ TibiBassoLyrics = \lyricmode {
   ta. %250 finis
 }
 
+AverteBassoNotes = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #253
+    \mvTr c8\fE^\tutti c4 d8 es4 es8 d
+    c2 h
+    h'8 h h h c4 c8 c %255
+    e, e16 e e8 e f4 f
+    f f f2
+    e1\trill
+    a,4 r r a'
+    h8([ c)] d([ h)] c[ g] c4~ %260
+    c h8 g a4^\critnote a8([ h)]
+    c2 g
+    g g8 f16 e a8 a
+    a g16 f h8 h h a16 g c8 c
+    r4 fis,8 fis g8. g16 g4 %265
+    R1
+    r4 c8([ b!)] as g f4
+    g c, r g'
+    g8 as16 g f8 as^\critnote d,4 c
+    g'8. g16 g8 g c,4 e %270
+    f8. f16 f8 f c2\fermata \bar "||" %271 finis
+  }
+}
+
+AverteBassoLyrics = \lyricmode {
+  A -- ver -- te fa -- ci -- em %253
+  tu -- am
+  a pec -- ca -- tis me -- is, et %255
+  o -- mnes in -- i -- qui -- ta -- tes
+  me -- as de --
+  _
+  le. Cor
+  mun -- dum cre -- _ %260
+  _ a in me,
+  De -- us.
+  Et spi -- ri -- tum re -- ctum
+  in -- no -- va in vi -- sce -- ri -- bus me -- is,
+  ne pro -- i -- ci -- as %265
+
+  a __ fa -- ci -- e
+  tu -- a, et
+  spi -- ri -- tum san -- ctum ne, ne
+  au -- fe -- ras a me, ne %270
+  au -- fe -- ras a me. %271 finis
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

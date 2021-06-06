@@ -536,6 +536,55 @@ TibiBassFigures = \figuremode {
   r4 <6 4>8 \bc <[5 3]> r2 %252 finis
 }
 
+AverteOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #253
+    \mvTr c4\fE-\tutti c8 d es4 r8 d
+    c c c c h2
+    h'8 h h h c2 %255
+    e,8 e e e f4 f
+    f8 f f f f f f f
+    e e e e e4 e,
+    a2 r4 a'
+    h8 c d h c g c4~ %260
+    c h8 g a a,^\critnote a' h
+    c2 g
+    g g8 f16 e a8 a
+    a g16 f h8 h h a16 g c8 c
+    r4 fis,8 fis g4 g, %265
+    R1
+    r4 c'8 b! as g f4
+    g c, r g'
+    g8 as16 g f8 as d,4 c
+    g' g, c e %270
+    f2 c\fermata \bar "||" %271 finis
+  }
+}
+
+AverteBassFigures = \figuremode {
+  r4. <[6!]>8 <6>4. <6->8 %253
+  <6->2 <6>
+  q1 %255
+  <[7-]>2 \bo <6- [4]>8 \bc <5 [_-]>4.
+  \bo <6- [_-]>4 \bc <5 [\t]> <6! 4! 2>2
+  <[7] 5! _+>4 <6 4> <5! \t> <\t _+>
+  r2. <6>4
+  <[6 5]>2 <4>4 <_!> %260
+  <4+ 2> <6> <7 [5!]> <6!>8 <6>
+  <_!>2 q
+  \bo <5 [_!]>4 \bc <6! [\t]>2 <5!>8 <6>
+  <6>4 <5>8 <6> r2
+  r4 <[6]> <_!>2 %265
+  r1
+  r4 <_!> <6> <[_-]>
+  <[7] _!> <_->2 \bo <[6 _!]>8 \bc <[5 \t]>
+  <4 2->4 <[_-]> <6!>2
+  <4>4 <_!>2 <6>4 %270
+  <_->2 <_!> %271 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

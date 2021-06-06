@@ -160,6 +160,32 @@ TibiViolinoI = {
   }
 }
 
+AverteViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #253
+    g'8\fE es'4 d8 c h c b
+    as2\trill g
+    d'4 d es8 d c4 %255
+    des des des8 c f4
+    des c h2~
+    h4 c8 a a4 gis\trill
+    a e' f f
+    r f f e8 f %260
+    d4^\critnote g,8 g' g4 f
+    e2\trill d\trill
+    R1*2
+    r4 d d8. d16 d4 %265
+    r g8 f es!8. d16 c4
+    e4. e8 f4 f~
+    f es8 es d es16 d es8 h
+    c2 h4 c~
+    c h c c %270
+    as2\trill g\fermata \bar "||" %271 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

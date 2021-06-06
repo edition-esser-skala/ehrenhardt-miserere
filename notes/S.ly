@@ -191,6 +191,53 @@ TibiSopranoLyrics = \lyricmode {
   a. %195 finis
 }
 
+AverteSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #253
+    \mvTr g'8\fE^\tutti es'4 d8 c([ h)] c b
+    as2\trill g
+    d'8 d d d es([ d)] c c %255
+    des des16 des des8 des des([ c)] f4
+    des c h2~
+    h4 c8[ a] a4 gis
+    a e' f f
+    r f f e8([ f)] %260
+    d4( g,8) g' g4 f
+    e2 d
+    R1*2
+    r4 d8 d d8. d16 d4 %265
+    r g8 f es!8. d16 c4
+    e4. e8 f4 f8 f
+    f4 es8 es d es16 d es8([ h]
+    c2) h4 c
+    c8. c16 h8 h c4 c %270
+    as8. as16 as8 as g2\fermata \bar "||" %271 finis
+  }
+}
+
+AverteSopranoLyrics = \lyricmode {
+  A -- ver -- te fa -- ci -- em %253
+  tu -- am
+  a pec -- ca -- tis me -- is, et %255
+  o -- mnes in -- i -- qui -- ta -- tes
+  me -- as de --
+  _ _ _
+  le. Cor mun -- dum,
+  cor mun -- dum %260
+  cre -- a in me,
+  De -- us.
+
+  Ne pro -- i -- ci -- as, %265
+  ne pro -- i -- ci -- as
+  me a fa -- ci -- e
+  tu -- a, et spi -- ri -- tum san --
+  ctum ne
+  au -- fe -- ras a me, ne %270
+  au -- fe -- ras a me. %271 finis
+}
+
 % SopranoNotes = {
 %   \relative c' {
 %     \clef treble
@@ -203,10 +250,7 @@ TibiSopranoLyrics = \lyricmode {
 % }
 
 
-% A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
-% et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
-% Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
-% Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
+
 % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
 % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
 % Do -- ce -- bo i -- ni -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.

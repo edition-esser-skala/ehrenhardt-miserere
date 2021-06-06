@@ -67,3 +67,30 @@ TibiViolinoII = {
     g16 b es,4 d8 es4 r\fermata \bar "||" %252 finis
   }
 }
+
+AverteViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #253
+    es8\fE g4 f8 es-\critnote f es f
+    es2 d
+    g4 g g g %255
+    b b b as
+    r as g2
+    gis4 a h2
+    a4 r r a
+    g g g2 %260
+    fis4 g e f
+    g2 g
+    d4 e2 e8 f
+    f4 f8 g g2
+    r4 a8 a h h h4 %265
+    r h8^\critnote c16 d g,8. f16 es!4
+    g g f8 g as4
+    g4. g8 f g16 f g8 d
+    es4 f g2
+    g g4 g
+    f2 e\fermata \bar "||" %271 finis
+  }
+}

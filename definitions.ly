@@ -675,10 +675,10 @@ tocLabelLong = #(define-music-function
 )
 
 
-
 tempoMiserere = \tempoMarkup "Largo"
 tempoQuoniam = \tempoMarkup "[Vivace]"
 tempoTibi = \tempoMarkup "[Andante]"
+tempoAverte = \tempoMarkup "Largo"
 
 
 \include "notes/cor.ly"

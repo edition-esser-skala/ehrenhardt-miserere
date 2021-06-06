@@ -60,3 +60,30 @@ TibiViola = {
     r8 b b b g4 r\fermata \bar "||" %252 finis
   }
 }
+
+AverteViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #253
+    c8\fE c c h c d c d
+    es4 c d2
+    d8 d d d c d es4 %255
+    g8 g g g f4 f
+    r f d2
+    d4 c e2
+    e4 r r c
+    d h8 d c4 c %260
+    d d c c8 d
+    e4 c h2
+    h^\critnote h8 a16 g c8 c
+    c h16 a d8 d d c16 h e8 e
+    r4 d8 d d8. d16 d4 %265
+    r g,8 a16 h c4 c
+    c c c2
+    h4 c r g
+    as as'8 f f4 es
+    d2 c4 c %270
+    c c c2\fermata \bar "||" %271 finis
+  }
+}

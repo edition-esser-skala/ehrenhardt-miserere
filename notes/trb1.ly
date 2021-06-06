@@ -43,3 +43,29 @@ MiserereTromboneI = {
     R\fermata \bar "||" %38 finis
   }
 }
+
+AverteTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #253
+    es4\fE r8 d c4 r8 b?
+    c4 as' g2
+    d8 d d d g,2 %255
+    b!4 b b as
+    des? c h2
+    h4 a e'?2
+    c4 r r f
+    f8 e f d e4 e %260
+    d d c2
+    c h
+    R1*2
+    r4 d d d %265
+    R1
+    r4 e f f
+    f es r d
+    es f g2
+    g g4 g %270
+    f2 e\fermata \bar "||" %271 finis
+  }
+}

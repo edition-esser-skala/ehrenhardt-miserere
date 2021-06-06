@@ -229,6 +229,55 @@ TibiAltoLyrics = \lyricmode {
   ta. %250 finis
 }
 
+AverteAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #253
+    \mvTr es8\fE^\tutti g4 f8 es([ f)] es f
+    es2 d
+    g8 g g g g4 g8 g %255
+    b b16 b b8 b b4 as
+    f f \once \tieDashed d2~
+    d4 c e2
+    e4 r r a
+    g g g2( %260
+    fis4) g e f?
+    g2 g
+    d4( e) e8 e16 e e8 f
+    f^\critnote f16 f f8 g g8. g16 g4
+    r a8 a h8. h16 h4 %265
+    r h8 c16([ d)] g,8. g16 g4
+    g g f8 g as4
+    g g8 g f g16 f g8([ d]
+    es4 f) g g
+    g8. g16 g8 g g4 g %270
+    f8. f16 f8 f e2\fermata \bar "||" %271 finis
+  }
+}
+
+AverteAltoLyrics = \lyricmode {
+  A -- ver -- te fa -- ci -- em %253
+  tu -- am
+  a pec -- ca -- tis me -- is, et %255
+  o -- mnes in -- i -- qui -- ta -- tes
+  me -- as de --
+  _ _
+  le. Cor
+  mun -- dum cre -- %260
+  a in me,
+  De -- us.
+  Et __ spi -- ri -- tum re -- ctum
+  in -- no -- va in vi -- sce -- ri -- bus,
+  ne pro -- i -- ci -- as, %265
+  ne pro -- i -- ci -- as
+  me a fa -- ci -- e
+  tu -- a, et spi -- ri -- tum san --
+  ctum ne
+  au -- fe -- ras a me, ne %270
+  au -- fe -- ras a me. %271 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

@@ -287,6 +287,55 @@ TibiTenoreLyrics = \lyricmode {
   mi -- hi. %221 fini
 }
 
+AverteTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #253
+    \mvTr c8\fE^\tutti c4 h8 c([ d)] c d
+    es4( c) d2
+    d8 d d d c([ d)] es es %255
+    g, g16 g g8 g f4 f
+    as as g2
+    gis4 a h2
+    a4^\critnote r r c
+    d h8([ d)] c4 c %260
+    d d c c8([ d)]
+    e4( c) h2
+    h h8 a16 g c8 c
+    c h16 a d8 d d c16 h e8 e
+    r4 d8 d g,8. g16 g4 %265
+    r g8 a16([ h)] c8. c16 c4
+    c c c c8 c
+    h4 c r g
+    as8 as16 b as8 f f4 es8([ c')]
+    d8. d16 d8 d c4 c %270
+    c8. c16 c8 c c2\fermata \bar "||" %271 finis
+  }
+}
+
+AverteTenoreLyrics = \lyricmode {
+  A -- ver -- te fa -- ci -- em %253
+  tu -- am
+  a pec -- ca -- tis me -- is, et %255
+  o -- mnes in -- i -- qui -- ta -- tes
+  me -- as de --
+  _ _ _
+  le. Cor
+  mun -- dum cre -- a, %260
+  cre -- a in me,
+  De -- us.
+  Et spi -- ri -- tum re -- ctum
+  in -- no -- va in vi -- sce -- ri -- bus me -- is,
+  ne pro -- i -- ci -- as, %265
+  ne pro -- i -- ci -- as
+  me a fa -- ci -- e
+  tu -- a, et
+  spi -- ri -- tum san -- ctum ne, ne __
+  au -- fe -- ras a me, ne %270
+  au -- fe -- ras a me. %271 finis
+}
+
 % TenoreNotes = {
 %   \relative c' {
 %     \clef "treble_8"
