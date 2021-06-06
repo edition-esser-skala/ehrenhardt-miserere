@@ -280,42 +280,92 @@
   %     \midi { \tempo 4 = 65 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     title = "R E D D E   M I H I   L A E T I T I A M"
+  %   }
+  %   \tocSubsection "1.5" "Redde mihi laetitiam"
+  %   \paper { systems-per-page = #3 }
+  %   \score {
+  %     <<
+  %       \new Staff {
+  %         \set Staff.instrumentName = \markup \center-column { "clno" "(C)" }
+  %         \ReddeClarino
+  %       }
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \ReddeSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \ReddeSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \ReddeAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \ReddeAltoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \ReddeOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \ReddeBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4. = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "R E D D E   M I H I   L A E T I T I A M"
+      title = "Q U O N I A M   S I   V O L U I S S E S"
     }
-    \tocSubsection "1.5" "Redde mihi laetitiam"
-    \paper { systems-per-page = #3 }
+    \tocSubsection "1.6" "Quoniam si voluisses"
+    \paper {
+      system-system-spacing.basic-distance = #25
+      system-system-spacing.minimum-distance = #25
+      systems-per-page = #2
+    }
     \score {
       <<
-        \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "clno" "(C)" }
-          \ReddeClarino
-        }
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \ReddeSopranoNotes }
+            \new Voice = "Soprano" { \dynamicUp \SiSopranoNotes }
           }
-          \new Lyrics \lyricsto Soprano \ReddeSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SiSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \ReddeAltoNotes }
+            \new Voice = "Alto" { \dynamicUp \SiAltoNotes }
           }
-          \new Lyrics \lyricsto Alto \ReddeAltoLyrics
+          \new Lyrics \lyricsto Alto \SiAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \SiTenoreNotes }
+          }
+          \new Lyrics \lyricsto Tenore \SiTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \SiBassoNotes }
+          }
+          \new Lyrics \lyricsto Basso \SiBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \ReddeOrgano
+            \SiOrgano
           }
         >>
-        \new FiguredBass { \ReddeBassFigures }
+        \new FiguredBass { \SiBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4. = 60 }
+      \midi { \tempo 4 = 75 }
     }
   }
 }

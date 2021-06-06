@@ -336,6 +336,59 @@ AverteTenoreLyrics = \lyricmode {
   au -- fe -- ras a me. %271 finis
 }
 
+SiTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \mixolydian \time 4/4 \autoBeamOff \tempoSi
+      \set Score.currentBarNumber = #496
+    \mvTr c8.\fE^\tutti c16 c8 c f,4 es!
+    es8 es es f c'8. c16 c4
+    e,8([ g)] c d e d c4
+    c f,8 g a! g f4
+    f b8 c d?4 c %500
+    c b8 b b4 c
+    r c c b
+    b( a!8) a b4 as
+    g g8([ c)] c4( h8) h
+    c4 e,8 e f g as([ b)] %505
+    c2 c4 c8 c
+    c c des4 c2
+    b4^\critnote r b b8 b
+    b4 as8 as as4 g~
+    g^\critnote f2 e4 %510
+    f1^\critnote
+    e2 g4 as
+    g g8 b! f4^\critnote f8 as
+    f4 e c' des
+    c2. c4 %515
+    c1\fermata \bar "||" %516 finis
+  }
+}
+
+SiTenoreLyrics = \lyricmode {
+  Quo -- ni -- am si vo -- lu -- %496
+  is -- ses sa -- cri -- fi -- ci -- um,
+  de -- dis -- sem u -- ti -- que,
+  de -- dis -- sem u -- ti -- que,
+  de -- dis -- sem u -- ti -- %500
+  que, ho -- lo -- cau -- stis
+  non de -- le --
+  cta -- be -- ris, non
+  de -- le -- cta -- be --
+  ris. Sa -- cri -- fi -- ci -- um %505
+  De -- o, sa -- cri --
+  fi -- ci -- um De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la -- _
+  _ _ %510
+  _
+  tus, cor con --
+  tri -- tum et hu -- mi -- li --
+  a -- tum, non de --
+  spi -- ci -- %515
+  es. %516 finis
+}
+
 % TenoreNotes = {
 %   \relative c' {
 %     \clef "treble_8"

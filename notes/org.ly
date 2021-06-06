@@ -1044,6 +1044,59 @@ ReddeBassFigures = \figuremode {
   r4. %495 finis
 }
 
+SiOrgano = {
+  \relative c {
+    \clef bass
+    \key f \mixolydian \time 4/4 \tempoSi
+      \set Score.currentBarNumber = #496
+    \mvTr f2\fE-\tutti f4 g
+    as r8 f c2
+    c' r4 e,
+    f2 r4 a,!
+    b2 r4 a! %500
+    b f'8 f e4 e
+    r es2 des8 b
+    f2 b4 f'
+    f es8 c g2
+    c r %505
+    r4 b! as a
+    b b' a! f8 es
+    des2 b4 b'
+    g as f g
+    e f c2 %510
+    h1
+    c2 es!4 f
+    g4. e8 f4. h,8
+    c4. b8 as4 b
+    c1 %515
+    f,\fermata \bar "||" %516 finis
+  }
+}
+
+SiBassFigures = \figuremode {
+  \bo <5 [_-]>2 \bc <6- [\t]>4 <6 5-> %496
+  \bo <[9] 4->8 \bc <[8] 3>4 <[_-]>8 <4>4 <_!>
+  r2. <6 5>4
+  \bo <[4]>4 \bc <[_!]>2 <6 5>4
+  <4> <_!>2 <6 5->4 %500
+  <[9] _->4 <6- 4> \bo <[7- 5]> \bc <[6 \l]>
+  r4 \bo <[6 \l]> <4! 2> <6>8 <_->
+  <6- 4>4 <5 _!> <_-> <6! _->
+  <4! 2> <6> <6 4> <5 _!>
+  \bc <[_! \l]>1 %505
+  r4 <4! 2> <6> q
+  \bo <[9] _-> <8 \t> \bc <[6]>4. <4 2>8
+  <6>2 <_->
+  <6 5-> <6- 5 [__]>4 <5->
+  <6 5> <_-> <4> <_!> %510
+  <7- 5>1
+  <_!>2 <6>4 <[6 5 _-]>
+  <4> <_!>8 <6 5-> <4>4 <[_!]>8 <7- 5>
+  \bo <[6-] 4>4 <5 _!>8 \bc <[4!]> <6>4 <_->
+  \bo <[6-] 4>2 \bc <[5] _!> %515
+  <_->1 %516 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

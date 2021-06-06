@@ -580,6 +580,59 @@ ReddeAltoLyrics = \lyricmode {
   am. %486 finis
 }
 
+SiAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key f \mixolydian \time 4/4 \autoBeamOff \tempoSi
+      \set Score.currentBarNumber = #496
+    \mvTr as'8.\fE^\tutti as16 as8 as as4 b
+    b8 as as as g8. g16 g4
+    R1
+    r8 f16([ g)] a!8 b c4. es,!8
+    es4( d!8) c b f' f8. f16 %500
+    f4 f8 f g4 g
+    r g f f
+    f f f f
+    d c g'4. g8
+    e4 g8 g as b c4 %505
+    c( e,) f2
+    f4 f \once \tieDashed f~ f
+    f r f f8 f
+    es4 es8 es des2
+    c1 %510
+    d!^\critnote
+    c2 es!4 d
+    d d8 c c4 c8 d
+    c4 c8([ g')] f4 f
+    f2( e4) e %515
+    f1\fermata \bar "||" %516 finis
+  }
+}
+
+SiAltoLyrics = \lyricmode {
+  Quo -- ni -- am si vo -- lu -- %496
+  is -- ses sa -- cri -- fi -- ci -- um,
+
+  de -- dis -- sem u -- ti --
+  que, __ de -- dis -- sem u -- ti -- %500
+  que, ho -- lo -- cau -- stis
+  non de -- le --
+  cta -- be -- ris, non
+  de -- le -- cta -- be --
+  ris. Sa -- cri -- fi -- ci -- um %505
+  De -- o,
+  De -- o, De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la --
+  _ %510
+  _
+  tus, cor con --
+  tri -- tum et hu -- mi -- li --
+  a -- tum, non de --
+  spi -- ci -- %515
+  es. %516 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

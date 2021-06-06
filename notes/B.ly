@@ -299,6 +299,59 @@ AverteBassoLyrics = \lyricmode {
   au -- fe -- ras a me. %271 finis
 }
 
+SiBassoNotes = {
+  \relative c {
+    \clef bass
+    \key f \mixolydian \time 4/4 \autoBeamOff \tempoSi
+      \set Score.currentBarNumber = #496
+    \mvTr f8.\fE^\tutti f16 f8 f f4 g
+    as8 as as f c8. c16 c4
+    c' c8 c c4. e,8
+    f4 r r a,!8 a
+    b4 r r a'!8 a %500
+    b4 f8 f e4 e
+    r es es des8([ b)]
+    f'4. f8 b,4 f'
+    f es8([ c)] g'4. g8
+    c,2 r %505
+    r4 b'!8 b as as a4
+    b2 a!4 f8([^\critnote es)]
+    des4 r b b'8 b
+    g4 as8 as f4 g
+    e f c2 %510
+    h1
+    c2 es!4 f
+    g g8 e f4 f8 h,
+    c4. b8 as4 b
+    c2. c4 %515
+    f1\fermata \bar "||" %516 finis
+  }
+}
+
+SiBassoLyrics = \lyricmode {
+  Quo -- ni -- am si vo -- lu -- %496
+  is -- ses sa -- cri -- fi -- ci -- um,
+  de -- dis -- sem u -- ti --
+  que, u -- ti --
+  que, u -- ti -- %500
+  que, ho -- lo -- cau -- stis
+  non de -- le --
+  cta -- be -- ris, non
+  de -- le -- cta -- be --
+  ris. %505
+  Sa -- cri -- fi -- ci -- um
+  De -- o, De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la -- _
+  _ _ _ %510
+  _
+  tus, cor con --
+  tri -- tum et hu -- mi -- li --
+  a -- tum, non de --
+  spi -- ci -- %515
+  es. %516 finis
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

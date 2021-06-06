@@ -546,6 +546,59 @@ ReddeSopranoLyrics = \lyricmode {
   am. %486 finis
 }
 
+SiSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key f \mixolydian \time 4/4 \autoBeamOff \tempoSi
+      \set Score.currentBarNumber = #496
+    \mvTr c'8.\fE^\tutti c16 c8 c des4 des
+    des8 c c^\critnote f f8. e16 e4
+    r8 c16([ d)] e8 f g4. b,8
+    b4( a!) r2
+    r8 b16([ c)] d8 es f( es4) des8 %500
+    des4 des8 des des4 c
+    r c a! b8[( c)]
+    des4( c8.) c16 b4 d
+    h c8([ d)] es4( d8.) c16
+    c4 r r2 %505
+    r r4 c8 c
+    des es f4 f( a,!)
+    b r des des8 des
+    des4 c8 c c4 \once \tieDashed b~
+    b as g2 %510
+    as1^\critnote
+    g2 c4 c
+    c h8([ g')] b,4 a!8 f'
+    as,4 g8 e' f4 des
+    as2 g %515
+    f1\fermata \bar "||" %516 finis
+  }
+}
+
+SiSopranoLyrics = \lyricmode {
+  Quo -- ni -- am si vo -- lu -- %496
+  is -- ses sa -- cri -- fi -- ci -- um,
+  de -- dis -- sem u -- ti --
+  que, __
+  de -- dis -- sem u -- ti -- %500
+  que, ho -- lo -- cau -- stis
+  non de -- le --
+  cta -- be -- ris, non
+  de -- le -- cta -- be --
+  ris. %505
+  Sa -- cri --
+  fi -- ci -- um De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la -- _
+  _ _ %510
+  _
+  tus, cor con --
+  tri -- tum \xE et \x hu -- mi -- li --
+  a -- tum, non de --
+  spi -- ci -- %515
+  es. %516 finis
+}
+
 % SopranoNotes = {
 %   \relative c' {
 %     \clef treble
@@ -558,11 +611,6 @@ ReddeSopranoLyrics = \lyricmode {
 % }
 
 
-
-% Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-% ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
-% Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-% cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
 % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
 % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
 % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
