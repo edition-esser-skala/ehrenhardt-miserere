@@ -238,6 +238,314 @@ AverteSopranoLyrics = \lyricmode {
   au -- fe -- ras a me. %271 finis
 }
 
+ReddeSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/8 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #272
+    R4.*20 %291
+    \mvTr e'16([\pE^\solo f g8)] c,
+    c16([ h)] c4
+    d16([ c)] d8. f16
+    e16. d32 c4 %295
+    R4.*4
+    e16.([ d32)] e8. f16 %300
+    d16. c32 d4
+    d16.([ c32)] d8. e16
+    c16. h32 c8. d16
+    e16[( d] e8.) f16
+    d4 r8 %305
+    g16([ f)] e8. f16
+    d4.
+    e32([ d c16)] c4
+    d16([ c)] h4
+    c32([ h a16)] a4 %310
+    h16([ a)] g4
+    e'16([ d)] d4
+    c8 h r
+    r16 c a8. a16
+    g4. %315
+    R4.*4
+    d'16([ e)] d8 r %320
+    R4.
+    g16([ a)] g8 r
+    R4.
+    a8 f8.([ e32 f)]
+    g16([ f e d)] c8 %325
+    f d8. c32([ d)]
+    e16([ d] c4)
+    r16 g a32[ g a h] c[ h c d]
+    e16[ d] c8.[ h16]
+    a16[ a] h32[ a h c] d[ c d e] %330
+    f16[ e] d8.[ c16]
+    h[ h] c32[ h c d] e[ d e f]
+    g16[ f] e8.[ d16]
+    e d c8 r
+    f16 e32([ d]) e8. d32[( c]) %335
+    a'8. g32([ f)] e16([ d)]
+    c f d8. c16
+    c4 r8
+    f32[( e d16] e8.) e16
+    a8 g r %340
+    f f8. f16
+    e4.
+    e32[ d c16] f32[ e d16] g32[ f e16]
+    a32[ g f16] e[ d c h]
+    c[ f] d8. c16 %345
+    c([ a')] g32[( a f16] e32[ f d16]
+    c[ f]) \appoggiatura e8 d8. c16
+    c4.
+    R4.*13 %361
+    e4.
+    fis8. e16 fis8
+    g[( fis]) e
+    dis16[( cis]) h8 r %365
+    c c4
+    c8 h32[ c h16] cis32[ d cis16]
+    \once \tieDashed d4.~
+    d8 c32[ d c16] d32[ e d16]
+    e[( d]) c8.[( d32 e] %370
+    f32[ e d16]) d8. c32([ d])
+    e16[( d)] c8 r
+    a'4.
+    \once \tieDashed a,~
+    \once \tieDashed a~ %375
+    a16[ h] h8.([ a16)]
+    a4.
+    R4.*6 %383
+    r8 r c
+    c8. b16 a8 %385
+    d d4
+    d8 c r
+    h!4 a8
+    g8.[ a16 h8]
+    a4^\critnote g8 %390
+    fis4 r8
+    r h h16 h
+    h h a([ g)] fis g
+    \once \tieDashed a4.~
+    a16 a[ g fis e fis] %395
+    g4.
+    e'16[ fis] dis8. e16
+    fis4 h,8
+    r \once \tieDashed g'4~
+    g16[ g fis e dis e] %400
+    \appoggiatura { dis[ e] } \once \tieDashed fis4.~
+    fis16[ fis e dis cis? dis]
+    \once \tieDashed e4.~
+    e16[ e dis e fis e]
+    dis[ h cis dis] e8 %405
+    g,16[( a]) fis8. fis16
+    e4.
+    e'16[ fis] dis8.[ e16]
+    e4.
+    R4.*20 %429
+    e16([ f)] g8 c, %430
+    c16([ h)] c4
+    d16([ c)] d8. f16
+    e16.([ d32)] c4
+    R4.*4 %437
+    e16.([ d32)] e8. f16
+    d16.([ c32)] d4
+    d16.([ c32)] d8. e16 %440
+    c16.([ h32)] c8. d16
+    e16[( d] e8.) f16
+    d4 r8
+    g16([ f)] e8. f16
+    d4. %445
+    e32([ d)] c16 c4
+    d16 c h4
+    c32([ h)] a16 a4
+    h16 a g4
+    e'16 d d4 %450
+    c8 h r
+    r16 c a8. a16
+    g4.
+    R4.*4 %457
+    d'16([ e)] d8 r
+    R4.
+    g16([ a)] g8 r %460
+    R4.
+    a8 f8. e32([ f)]
+    g16([ f e d)] c8
+    f d8.([ c32 d)]
+    e16([ d]) c4 %465
+    r16 g a32[ g a h] c[ h c d]
+    e16[ d] c8.[ h16]
+    a16[ a] h32[ a h c] d[ c d e]
+    f16[ e] d8.[ c16]
+    h[ h] c32[ h c d] e[ d e f] %470
+    g16[ f] e8. d16
+    e([ d)] c8 r
+    f16 e32([ d]) e8. d32[( c])
+    a'8.([ g32 f)] e16([ d)]
+    c f d8.([ c16)] %475
+    c4 r8
+    f32[( e d16]) e8. e16
+    a8 g r
+    f f8. f16
+    e4. %480
+    e32[ d c16] f32[ e d16] g32[ f e16]
+    a32[ g f16] e[ d c h]
+    c[ f] d8. c16
+    c([ a')] g32[( a f16] e32[ f d16]
+    c[ f]) \appoggiatura e8 d8. c16 %485
+    c4.
+    R4.*8 %494
+    R4.\fermata \bar "||" %495 finis
+  }
+}
+
+ReddeSopranoLyrics = \lyricmode {
+  Red -- de %292
+  mi -- hi,
+  red -- de lae --
+  ti -- ti -- am, %295
+
+  red -- de lae -- %300
+  ti -- ti -- am,
+  red -- de lae --
+  ti -- ti -- am, lae --
+  ti -- ti --
+  am, %305
+  lae -- ti -- ti --
+  am,
+  red -- de
+  mi -- hi,
+  red -- de %310
+  mi -- hi,
+  red -- de
+  mi -- hi
+  lae -- ti -- ti --
+  am, %315
+
+  red -- de, %320
+
+  red -- de,
+
+  red -- de __
+  mi -- hi %325
+  lae -- ti -- ti --
+  am, __
+  lae -- ti -- _
+  _ _
+  _ _ _ %330
+  _ _
+  _ _ _
+  _ _
+  _ ti -- am,
+  et spi -- ri -- tu %335
+  prin -- ci -- pa --
+  li con -- fir -- ma
+  me,
+  prin -- ci --
+  pa -- li %340
+  con -- fir -- ma
+  me,
+  con -- _ _
+  _ _
+  _ fir -- ma %345
+  me, con --
+  fir -- ma
+  me.
+
+  Do -- %362
+  ce -- bo in --
+  i -- quos
+  vi -- as, %365
+  vi -- as
+  tu -- as, __ _
+  _
+  _ _
+  do -- ce -- %370
+  bo in --
+  i -- quos
+  vi --
+  as __
+  %375
+  tu --
+  as,
+
+  et %384
+  im -- pi -- i %385
+  ad te,
+  ad te
+  con -- ver --
+  ten --
+  _ _ %390
+  tur.
+  Li -- be -- ra
+  me de san -- gui -- ni --
+  bus, __
+  De -- %395
+  _
+  _ _ us
+  me -- us,
+  De --
+  %400
+  _
+
+  _
+
+  _ us %405
+  \xE sa -- lu -- tis
+  me --
+  _ _
+  ae. \x
+
+  Et ex -- al -- %430
+  ta -- bit
+  lin -- gu -- a
+  me -- a,
+
+  et ex -- al -- %438
+  ta -- bit
+  lin -- gu -- a %440
+  me -- a iu --
+  sti -- ti --
+  am,
+  iu -- sti -- ti --
+  am, %445
+  Do -- mi -- ne,
+  la -- bi -- a
+  me -- a a --
+  pe -- ri -- es,
+  la -- bi -- a %450
+  me -- a
+  a -- pe -- ri --
+  es,
+
+  et os %458
+
+  me -- um %460
+
+  an -- nun -- ti --
+  a -- bit
+  lau -- dem __
+  tu -- am, %465
+  lau -- _ _
+  _ _
+  _ _ _
+  _ _
+  _ _ _ %470
+  _ _ dem
+  tu -- am,
+  et an -- nun -- ti --
+  a -- bit
+  lau -- dem tu -- %475
+  am,
+  an -- nun -- ti --
+  a -- bit
+  lau -- dem tu --
+  am, %480
+  lau -- _ _
+  _ _
+  _ dem tu --
+  am, lau --
+  dem tu -- %485
+  am. %486 finis
+}
+
 % SopranoNotes = {
 %   \relative c' {
 %     \clef treble
@@ -251,13 +559,6 @@ AverteSopranoLyrics = \lyricmode {
 
 
 
-% Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-% et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-% Do -- ce -- bo i -- ni -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-% Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-% et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
-% Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-% et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
 % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
 % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
 % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;

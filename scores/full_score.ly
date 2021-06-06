@@ -205,79 +205,117 @@
   %     \midi { \tempo 4 = 65 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     title = "A V E R T E   F A C I E M   T U A M"
+  %   }
+  %   \tocSubsection "1.4" "Averte faciem tuam"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AverteTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AverteTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AverteViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AverteViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \AverteViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AverteSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AverteSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AverteAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AverteAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AverteTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AverteBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AverteBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AverteOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AverteBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 65 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "A V E R T E   F A C I E M   T U A M"
+      title = "R E D D E   M I H I   L A E T I T I A M"
     }
-    \tocSubsection "1.4" "Averte faciem tuam"
+    \tocSubsection "1.5" "Redde mihi laetitiam"
+    \paper { systems-per-page = #3 }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \AverteTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \AverteTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \AverteViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \AverteViolinoII
-            }
-          >>
-          \new Staff {
-            \set Staff.instrumentName = "vla"
-            \AverteViola
-          }
-        >>
+        \new Staff {
+          \set Staff.instrumentName = \markup \center-column { "clno" "(C)" }
+          \ReddeClarino
+        }
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AverteSopranoNotes }
+            \new Voice = "Soprano" { \dynamicUp \ReddeSopranoNotes }
           }
-          \new Lyrics \lyricsto Soprano \AverteSopranoLyrics
+          \new Lyrics \lyricsto Soprano \ReddeSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AverteAltoNotes }
+            \new Voice = "Alto" { \dynamicUp \ReddeAltoNotes }
           }
-          \new Lyrics \lyricsto Alto \AverteAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AverteTenoreNotes }
-          }
-          \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AverteBassoNotes }
-          }
-          \new Lyrics \lyricsto Basso \AverteBassoLyrics
+          \new Lyrics \lyricsto Alto \ReddeAltoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AverteOrgano
+            \ReddeOrgano
           }
         >>
-        \new FiguredBass { \AverteBassFigures }
+        \new FiguredBass { \ReddeBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 65 }
+      \midi { \tempo 4. = 60 }
     }
   }
 }

@@ -679,6 +679,7 @@ tempoMiserere = \tempoMarkup "Largo"
 tempoQuoniam = \tempoMarkup "[Vivace]"
 tempoTibi = \tempoMarkup "[Andante]"
 tempoAverte = \tempoMarkup "Largo"
+tempoRedde = \tempoMarkup "Allegro"
 
 
 \include "notes/cor.ly"

@@ -585,6 +585,465 @@ AverteBassFigures = \figuremode {
   <_->2 <_!> %271 finis
 }
 
+ReddeOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/8 \tempoRedde
+      \set Score.currentBarNumber = #272
+    \mvTr c8\fE-\solo c' h
+    a g16 f e8
+    f d g
+    c,16 c' h c g c %275
+    c,4.
+    r16 f e f d f
+    f,4.
+    r16 e' d e c e
+    e,4. %280
+    d'8 g c,
+    f4.
+    r16 g fis g d g
+    g,4.
+    r16 g' fis g e-\critnote g %285
+    g, g' fis g d g
+    c,4.
+    r16 c' h c g g,
+    a8. a'16 g f
+    e g a h c8 %290
+    r16 f, g8[ g,]
+    c\pE c' h
+    a g16 f e8
+    d g g,
+    c c' c, %295
+    r g' fis
+    e d16 c h8
+    a d d,
+    g g' g,
+    r c' c, %300
+    d'16 c h a g8
+    g g g,
+    c4.
+    r8 c' c,
+    g' g, r %305
+    r c' c,
+    g' d16 h g8
+    r c a'
+    r h, g'
+    r a, d %310
+    r g, g'
+    g, g' r
+    fis g g,
+    c d d,
+    g\fE g' h %315
+    r16 c h c g c
+    c,8. a'16 c8
+    d,8. d'16 h8
+    c d d,
+    g4. %320
+    r8 g\pE g,
+    r c' c,
+    r c' c,
+    r f f,
+    r c'' c, %325
+    d g g,
+    r16 c' g e c8
+    e4 d8
+    r c c
+    f, f' f, %330
+    r d' d
+    g, g' g,
+    r e' g
+    c, c' c,
+    r c' c, %335
+    f, f' g
+    a g g,
+    r16 c' g e c8
+    g' c c,
+    r c' c, %340
+    r16 g' a g a h
+    c c,32 h c16 d e d
+    c8 c' c,
+    r f g
+    a g g, %345
+    r g' g,
+    a16 f g4
+    \kneeBeam c,8\f c'' e,
+    r16 f e f d f
+    d8 d, r %350
+    r16 e' d e c e
+    c4.
+    d8 c16 g' c8
+    r e, d
+    c16 g' a h c8 %355
+    r16 a g8 g,
+    c c' h
+    a\pE c a
+    gis e gis
+    a, d16 e f8 %360
+    e16 e' dis e h e
+    e,8 g!16 fis e8
+    dis4 h'8
+    e, a16 h c8
+    r h h, %365
+    r c d
+    g, g' g,
+    r d' h
+    a4.
+    r8 a' a, %370
+    r a' a,
+    r16 a' e c a8
+    c4 r8
+    c4 r8
+    c4 r8 %375
+    r16 d e8 e,
+    a\f c' a
+    d16 d, e f g a
+    h8 h g
+    c16 c, d e f g %380
+    a8 f a
+    h gis a
+    r e e,
+    a a'\pE g!
+    f4 f8 %385
+    r b,?16 c d e
+    f4 r8
+    r d16 e f8
+    e4.
+    dis4 e8 %390
+    h h' a
+    g16 fis e d c h
+    a8 a' a,
+    r fis' fis,
+    r g' g, %395
+    r e' e,
+    r a'16 h c8
+    h h, r
+    r g' g,
+    r16 a a'8 a, %400
+    r d d'
+    r g,, g'
+    r c, c'
+    r fis,, fis'
+    r h, c %405
+    h h' h,
+    e,4.
+    r8 h' h
+    e,4.
+    c'8\fE c' h %410
+    a g16 f e8
+    f d g
+    c,16 c' h c g c
+    c,4.
+    r16 f e f d f %415
+    f,4.
+    r16 e' d e c e
+    e,4.
+    d'8 g c,
+    f4. %420
+    r16 g fis g d g
+    g,4.
+    r16 g' fis g e g
+    g, g' fis g d g
+    c,4. %425
+    r16 c' h c g g,
+    a8. a'16 g f
+    e g a h c8
+    r16 f, g8[ g,]
+    c\pE c' h %430
+    a g16 f e8
+    d g g,
+    c c' c,
+    r g' fis
+    e d16 c h8 %435
+    a d d,
+    g g' g,
+    r c' c,
+    d'16 c h a g8
+    g g g, %440
+    c4.
+    r8 c' c,
+    g' g, r
+    r c' c,
+    g' d16 h g8 %445
+    r c a'
+    r h, g'
+    r a, d
+    r g, g'
+    g, g' r %450
+    fis g g,
+    c d d,
+    g\fE g' h
+    r16 c h c g c
+    c,8. a'16 c8 %455
+    d,8. d'16 h8
+    c d d,
+    g4.
+    r8 g\pE g,
+    r c' c, %460
+    r c' c,
+    r f f,
+    r c'' c,
+    d g g,
+    r16 c' g e c8 %465
+    e4 d8
+    r c c
+    f, f' f,
+    r d' d
+    g, g' g, %470
+    r e' g
+    c, c' c,
+    r c' c,
+    f, f' g
+    a g g, %475
+    r16 c' g e c8
+    g' c c,
+    r c' c,
+    r16 g' a g a h
+    c c,32 h c16 d e d %480
+    c8 c' c,
+    r f g
+    a g g,
+    r g' g,
+    a16 f g4 %485
+    \kneeBeam c,8\f c'' e,
+    r16 f e f d f
+    d8 d, r
+    r16 e' d e c e
+    c4. %490
+    d8 c16 g' c8
+    r e, d
+    c16 g' a h c8
+    r16 a g8 g,
+    c4.\fermata \bar "||" %495 finis
+  }
+}
+
+ReddeBassFigures = \figuremode {
+  r4 <2>8 %272
+  r4 <6>8
+  <6 5>4.
+  r %275
+  r
+  r16 <[6]> r4
+  r4.
+  r16 <6> r4
+  r4. %280
+  r
+  \bo <[8 6]>4 \bc <[7 5]>8
+  r4.
+  r
+  \bo <[6 4]> %285
+  \bc <[7 5]>
+  r
+  r
+  r
+  <6> %290
+  r8 \bo <[6] 4> \bc <[5] 3>
+  r4 <[2]>8
+  r4 <6>8
+  r8 <7>4
+  r4. %295
+  r4 <[2]>8
+  r4 <6>8
+  r <[7] _+>4
+  r4.
+  r %300
+  <[6]>
+  r
+  r
+  r
+  r %305
+  r
+  r
+  r8 <6>4
+  <7>8 <6>4
+  <[7]>8 <6\\> <[_+]> %310
+  r4.
+  <6 4>8 <[5] 3>4
+  <6 5>4.
+  <6>8 <_+>4
+  r4 <6>8 %315
+  r4.
+  r4 <[6]>8
+  <[_+]>4 <6>8
+  <[6]> <4> <_+>
+  r4. %320
+  r
+  r
+  r
+  <5>8 <6>4
+  r4. %325
+  r
+  r
+  <6>4 q8
+  r4.
+  r %330
+  r8 <[_+]>4
+  r4.
+  r8 <[6]>4
+  r4.
+  r %335
+  r
+  r
+  r
+  <[7]>
+  r %340
+  r16 <7> r4
+  r4.
+  r
+  r8 <[2]>4
+  r4. %345
+  r
+  r
+  r4 <[6]>8
+  r16 <[6]> r4
+  r4. %350
+  r16 <6> r4
+  r4.
+  r
+  r8 <6> q
+  r4. %355
+  r8 \bo <[6] 4> \bc <[5] 3>
+  r4 <6\\>8
+  r4.
+  <6>
+  r8 <[6]>4 %360
+  <[_+]>4.
+  <_!>
+  <6 [_+]>4 <[5+ _+]>8
+  r8 <[6\\]>4
+  r8 <[5+] _+>4 %365
+  r8 <6> <_+>
+  \bo <[4]> <3> <4+>
+  <4> \bc <[_+]> <6\\>
+  \bo <[4]> \bc <[3]>4
+  r4. %370
+  r8 <4 2>4
+  r16 <5> r4
+  <6>4.
+  <\t>
+  q %375
+  r16 <[_+]> <4>8 <_+>
+  r4.
+  r
+  <6>
+  r %380
+  <6>
+  <5>8 <6>4
+  r8 <4> <_+>
+  r4 <6 [_-]>8
+  <4->4. %385
+  r
+  \bo <[6] 4->8 \bc <[5] 3>4
+  r8 <6!>4
+  r4.
+  <6 5 [_+]> %390
+  \bo <[5+ 4]>8 \bc <[\t _+]>4
+  <6>4.
+  \bo <[9]>8 \bc <[8]>4
+  r8 <6 5>4
+  \bo <[9]>8 \bc <[8]>4 %395
+  r8 <6 5>4
+  r8 \bo <[6+ 4+ 3]> \bc <[\t \t \t]>
+  <[5+] _+>4.
+  r8 <6>4
+  r16 <[7]> r4 %400
+  r8 <[7] _+>4
+  r8 <[7+]>4
+  r8 <7>4
+  r8 <[7]>4
+  r8 <[7 5+] _+> <3> %405
+  \bo <[6 4]>16 <7 5+> \bc <[5+ _+]>4
+  r4.
+  r8 <[5+] _+>4
+  r4.
+  r4 <2>8 %410
+  r4 <6>8
+  <6 5>4.
+  r
+  r
+  r16 <[6]> r4 %415
+  r4.
+  r16 <6> r4
+  r4.
+  r
+  \bo <[8 6]>4 \bc <[7 5]>8 %420
+  r4.
+  r
+  \bo <[6 4]>
+  \bc <[7 5]>
+  r %425
+  r
+  r
+  <6>
+  r8 \bo <[6] 4> \bc <[5] 3>
+  r4 <[2]>8 %430
+  r4 <6>8
+  r8 <7>4
+  r4.
+  r4 <[2]>8
+  r4 <6>8 %435
+  r <[7] _+>4
+  r4.
+  r
+  <[6]>
+  r %440
+  r
+  r
+  r
+  r
+  r %445
+  r8 <6>4
+  <7>8 <6>4
+  <[7]>8 <6\\> <[_+]>
+  r4.
+  <6 4>8 <[5] 3>4 %450
+  <6 5>4.
+  <6>8 <_+>4
+  r4 <6>8
+  r4.
+  r4 <[6]>8 %455
+  <[_+]>4 <6>8
+  <[6]> <4> <_+>
+  r4.
+  r
+  r %460
+  r
+  <5>8 <6>4
+  r4.
+  r
+  r %465
+  <6>4 q8
+  r4.
+  r
+  r8 <[_+]>4
+  r4. %470
+  r8 <[6]>4
+  r4.
+  r
+  r
+  r %475
+  r
+  <[7]>
+  r
+  r16 <7> r4
+  r4. %480
+  r
+  r8 <[2]>4
+  r4.
+  r
+  r %485
+  r4 <[6]>8
+  r16 <[6]> r4
+  r4.
+  r16 <6> r4
+  r4. %490
+  r
+  r8 <6> q
+  r4.
+  r8 \bo <[6] 4> \bc <[5] 3>
+  r4. %495 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

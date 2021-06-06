@@ -278,6 +278,308 @@ AverteAltoLyrics = \lyricmode {
   au -- fe -- ras a me. %271 finis
 }
 
+ReddeAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/8 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #272
+    R4.*24 %295
+    \mvTr h'16([\pE^\solo c d8)] g,
+    g16([ fis)] g4
+    a16([ g)] a8. c16
+    h a g8 r
+    g16.([^\critnote f32)] g8. a16 %300
+    f16.^\critnote e32 f4
+    f16.([^\critnote e32)] f8. g16
+    e16.^\critnote d32 e8. f16
+    g([ f g a h)] c
+    h4 r8 %305
+    h c8. d16
+    h4.
+    c32([ h a16)] a4
+    h16([ a)] g4
+    a32([ g fis16)] fis4 %310
+    g16([ fis)] g4
+    c8 h r
+    a g r
+    r16 a fis8. fis16
+    g4. %315
+    R4.*5 %320
+    g16([ a)] g8 r
+    R4.
+    c16([ d)] c8 r
+    f, d4
+    e8([ g)] c %325
+    d h8. h16
+    c4.
+    R4.
+    r16 d, e32[( d e f] g16) e
+    f4. %330
+    r16 e fis32([ e fis g] a16) fis
+    g4.
+    e16([ f g)] g([ a)] h
+    \once \tieDashed c8~ c r
+    a16 g32([ f)] g8. f32([ e)] %335
+    a8 a h
+    c16 d h8. c16
+    c4 r8
+    d c r
+    f, e r %340
+    d'^\critnote d8. d16
+    c4.
+    g32[ f e16] a32[ g f16] e32[ d c16]
+    a'8 h4
+    c16[ d] h8. c16 %345
+    c[( f,)] e[( g a h]
+    c[ a]) h8. c16
+    c4.
+    R4.*9 %357
+    a4.
+    h8. a16 h8
+    c([ h)] a %360
+    gis16([ fis)] e4
+    R4.*4 %365
+    r8 e fis
+    g4.
+    g8 fis32[ g fis16] gis32[ a gis16]
+    a4 h8
+    c16([ h)] a8.([ h32 c] %370
+    d[ c h16)] h8. a32([ h)]
+    c16([ h)] a4
+    e4.
+    e~
+    e %375
+    fis8 gis8.([ a16)]^\critnote
+    a4.
+    R4.*6 %383
+    r8 r a
+    a8. g16 f8 %385
+    b b4
+    b8 a r
+    f4 f8
+    e8.[ fis16 g8]
+    fis4 e8 %390
+    e([ dis)] r
+    r h' h16^\critnote h
+    c4.~
+    c16 c h([ a)] g a
+    h4.~ %395
+    h16 h[ a g fis e]
+    g[ a] fis8. e16
+    dis4 dis8
+    e h'4
+    c4.~ %400
+    c16[ c h c d c]
+    h4.~
+    h16[ h a h c h]
+    \once \tieDashed a4.~
+    a4 g8 %405
+    e16([ fis)] dis8. dis16
+    e4.
+    g16[ a] fis8.[ e16]^\critnote
+    e4.
+    R4.*24 %433
+    h'16([ c)] d8 g,
+    g16([ fis)] g4 %435
+    a16([ g)] a8. c16
+    h([ a)] g8 r
+    g16.([^\critnote f32)] g8. a16
+    f16.([^\critnote e32)] f4
+    f16.([^\critnote e32)] f8. g16 %440
+    e16.([^\critnote d32)] e8. f16
+    g([ f g a h)] c
+    h4 r8
+    h c8. d16
+    h4. %445
+    c32([ h)] a16 a4
+    h16 a g4
+    a32([ g)] fis16 fis4
+    g16 fis g4
+    c16 h h8 r %450
+    a g r
+    r16 a fis8. fis16
+    g4.
+    R4.*5 %458
+    g16([ a)] g8 r
+    R4. %460
+    c16([ d)] c8 r
+    f, d4
+    e8 g c
+    d h4
+    c8 c4 %465
+    R4.
+    r16 d,( e32[ d e f] g16[ e])
+    f4.
+    r16 e( fis32[ e fis g] a16[ fis)]
+    g4. %470
+    e16([ f g g a)] h
+    c8 c r
+    a16 g32([ f)] g8. f32([ e)]
+    a4 h8
+    c16 d h8.([ c16)] %475
+    c4 r8
+    d c8. c16
+    f,8 e r
+    d' d8. d16
+    c4. %480
+    g32[ f e16] a32[ g f16] e32[ d c16]
+    a'8 h4
+    c16[ d] h8. c16
+    c[( f,)] e[( g a h]
+    c[ a]) h8. c16 %485
+    c4.
+    R4.*8 %494
+    R4.\fermata \bar "||" %495 finis
+  }
+}
+
+ReddeAltoLyrics = \lyricmode {
+  Red -- de %296
+  mi -- hi,
+  red -- de lae --
+  ti -- ti -- am,
+  red -- de lae -- %300
+  ti -- ti -- am,
+  red -- de lae --
+  ti -- ti -- am, lae --
+  ti -- ti --
+  am, %305
+  lae -- ti -- ti --
+  am,
+  red -- de
+  mi -- hi,
+  red -- de %310
+  mi -- hi,
+  red -- de
+  mi -- hi
+  lae -- ti -- ti --
+  am, %315
+
+  red -- de, %321
+
+  red -- de,
+  red -- de
+  mi -- hi %325
+  lae -- ti -- ti --
+  am,
+
+  lae -- ti -- ti --
+  am, %330
+  lae -- ti -- ti --
+  am,
+  lae -- ti -- ti --
+  am,
+  et spi -- ri -- tu %335
+  prin -- ci -- pa --
+  li con -- fir -- ma
+  me,
+  prin -- ci --
+  pa -- li %340
+  con -- fir -- ma
+  me,
+  con -- _ _
+  _ _
+  _ fir -- ma %345
+  me, con --
+  fir -- ma
+  me.
+
+  Do -- %358
+  ce -- bo in --
+  i -- quos %360
+  vi -- as,
+
+  vi -- as %366
+  tu --
+  as, __ _ _
+  _ _
+  do -- ce -- %370
+  bo in --
+  i -- quos
+  vi --
+  as __
+  %375
+  _ tu --
+  as,
+
+  et %384
+  im -- pi -- i %385
+  ad te,
+  ad te
+  con -- ver --
+  ten --
+  _ _ %390
+  tur.
+  Li -- be -- ra
+  me __
+  de san -- gui -- ni --
+  bus, __ %395
+  De --
+  _ _ us
+  me -- us,
+  De -- _
+  _ %400
+
+  _
+
+  _
+  us %405
+  sa -- lu -- tis
+  me --
+  _ _
+  ae.
+
+  Et ex -- al -- %434
+  ta -- bit %435
+  lin -- gu -- a
+  me -- a,
+  et ex -- al --
+  ta -- bit
+  lin -- gu -- a %440
+  me -- a iu --
+  sti -- ti --
+  am,
+  iu -- sti -- ti --
+  am, %445
+  Do -- mi -- ne,
+  la -- bi -- a
+  me -- a a --
+  pe -- ri -- es,
+  la -- bi -- a %450
+  me -- a
+  a -- pe -- ri --
+  es,
+
+  et os %459
+  %460
+  me -- um
+  an -- nun -- ti --
+  a -- bit
+  lau -- dem
+  tu -- am, %465
+
+  lau --
+  dem,
+  lau --
+  dem, %470
+  lau -- dem
+  tu -- am,
+  et an -- nun -- ti --
+  a -- bit
+  lau -- dem tu -- %475
+  am,
+  an -- nun -- ti --
+  a -- bit
+  lau -- dem tu --
+  am, %480
+  lau -- _ _
+  _ _
+  _ dem tu --
+  am, lau --
+  dem tu -- %485
+  am. %486 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble
