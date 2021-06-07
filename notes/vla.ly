@@ -120,3 +120,103 @@ BenigneViola = {
     a4 r r2\fermata \bar "||" %554 finis
   }
 }
+
+GloriaViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoGloria
+      \set Score.currentBarNumber = #555
+    c4\fE c c c
+    c g'8 g g4 g
+    r d c c \noBreak
+    f2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*12 %570
+    r2 c,
+    es1
+    h
+    d
+    c2 b! %575
+    a1\trill
+    g
+    r4 b'8 a g a b c
+    d4 d, d'2~
+    d4 c8 b a b c a %580
+    h4 g c2~
+    c h
+    c4 es,8 d c4 g
+    c c8 d es f g4
+    r d8 c h2~ %585
+    h8 c d es f4 d
+    g,2 b!
+    c1
+    f2 g
+    as1 %590
+    g2 es
+    g1
+    d
+    f
+    es4 g8 f es4 b %595
+    es es8 f g as b4
+    r f8 es \once \tieDashed d2~
+    d8 es f g as4 f
+    g2 g
+    f f %600
+    f as
+    g g
+    r b
+    a! f
+    a1 %605
+    e
+    g
+    fis2 g
+    a a
+    r g %610
+    b1
+    fis
+    a
+    g2 es
+    d1\trill %615
+    c
+    r4 es8 d c d es f
+    g4 g, g'2~
+    g4 f8 es d es f d
+    es4 c f2 %620
+    g1
+    as
+    f2 f
+    es1
+    es2 es %625
+    d1
+    d2 b!
+    d1
+    a
+    c %630
+    d2 r
+    r b'4 c
+    f,1
+    d2 g
+    g4 es8 d c4 g %635
+    c2 c
+    r d
+    f1
+    g2 g
+    f c %640
+    d c
+    es1~
+    es4 d8 c h c d4
+    g,2 g'~
+    g as %645
+    g g
+    g c,\p
+    \once \tieDashed es1~
+    es4 d8 c h c d4
+    g,2 g'~ %650
+    g as
+    g g
+    g g\fE
+    g1
+    e %655
+    \time 4/4 \tempoAmen as4 g f2
+    e\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}

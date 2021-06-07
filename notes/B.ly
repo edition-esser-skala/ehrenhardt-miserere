@@ -412,13 +412,177 @@ BenigneBassoLyrics = \lyricmode {
   los. %549 finis
 }
 
-% BassoNotes = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+GloriaBassoNotes = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+      \set Score.currentBarNumber = #555
+    \mvTr c4\fE^\tutti c8 c c4 c
+    c4 h8 c g'8. g16 g4
+    r4 d8 d es4 e8 e \noBreak
+    f2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*18 %576
+    r2 g
+    b1
+    fis
+    a %580
+    g2 es
+    d2. d4
+    c2 c
+    es1
+    h %585
+    d
+    c2 b!
+    as2. as4
+    as'2 g4 g
+    f2. f4 %590
+    es1
+    r4 g8([ f)] es([ f)] g([ as)]
+    b2 b~
+    b4 as8([ g)] f([ g as f)]
+    g2 es %595
+    g1
+    d2 d
+    f1
+    es4 g8([ f] es[ f g as]
+    b2) b~ %600
+    b4 as8([ g] f[ g as b]
+    c2) c~
+    c4 b8([ a!] g[ a b c]
+    d4) d, r2
+    r4 f8([ e] d[ e f g] %605
+    a2) a~
+    a4 g8[( f] e[ f g e])
+    fis2 g~
+    g fis
+    g1 %610
+    R1*5 %615
+    r2 c,
+    es1
+    h
+    d
+    c2 as %620
+    g g'
+    f1
+    r4 b8([ c] b[ as g f]
+    es2) g
+    r4 as8([ b] as[ g f es] %625
+    d2) f
+    r g
+    b1
+    fis
+    a %630
+    g2 r
+    r4 g8([ f] es[ f g as]
+    b4 b,) b'2
+    r4 d,8([ c] h[ c d h])
+    c1 %635
+    r2 es
+    g1
+    d
+    es2 e
+    f2. as4 %640
+    g1
+    r2 c,
+    g'1
+    r2 h,
+    c f %645
+    g g,
+    c1
+    r2 c\pE
+    g'1
+    r2 h, %650
+    c f
+    g g,
+    c c(\fE
+    g'1)
+    c, %655
+    \time 4/4 \tempoAmen f4 e f2
+    c\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}
+
+GloriaBassoLyrics = \lyricmode {
+  Glo -- ri -- a Pa -- tri, %555
+  glo -- ri -- a Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto.
+
+  Si -- %577
+  cut
+  e --
+  rat %580
+  in prin --
+  ci -- pi --
+  o, si --
+  cut
+  e -- %585
+  rat
+  in prin --
+  ci -- pi --
+  o, in prin --
+  ci -- pi -- %590
+  o
+  et nunc et
+  sem -- per __
+  et in __
+  sae -- cu -- %595
+  la
+  sae -- cu --
+  lo --
+  rum, a --
+  men, __ %600
+  a --
+  men, __
+  a --
+  men,
+  a -- %605
+  men, __
+  a --
+  men, a --
+  _
+  men, %610
+
+  a -- %616
+  _
+  _
+  _
+  _ _ %620
+  _ _
+  men,
+  a --
+  men,
+  a -- %625
+  men,
+  a --
+  _
+  _
+  _ %630
+  \xE men,
+  a --
+  \x men,
+  a --
+  \xE men, %635
+  a --
+  _
+  _
+  _ _
+  _ _ %640
+  men,
+  a --
+  men,
+  a --
+  _ _ %645
+  _ _
+  men,
+  a --
+  men,
+  a -- %650
+  _ _
+  _ _
+  men, a --
+
+  \x men, %655
+  a -- \xE men, a --
+  \x men. %657 FINIS
+}

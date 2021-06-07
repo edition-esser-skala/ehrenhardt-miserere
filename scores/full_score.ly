@@ -368,55 +368,130 @@
   %     \midi { \tempo 4 = 75 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     title = "B E N I G N E   F A C"
+  %   }
+  %   \tocSubsection "1.7" "Benigne fac"
+  %   \paper { systems-per-page = #2 }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \BenigneViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \BenigneViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \BenigneViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \BenigneTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \BenigneBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \BenigneOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \BenigneBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "B E N I G N E   F A C"
+      title = "G L O R I A   P A T R I"
     }
-    \tocSubsection "1.7" "Benigne fac"
-    \paper { systems-per-page = #2 }
+    \tocSubsection "1.8" "Gloria Patri"
     \score {
       <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \GloriaTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \GloriaTromboneII
+            }
+          >>
+        >>
         \new StaffGroup <<
           \new GrandStaff \with { \smallGroupDistance } <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \BenigneViolinoI
+              \GloriaViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \BenigneViolinoII
+              \GloriaViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \BenigneViola
+            \GloriaViola
           }
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \BenigneTenoreNotes }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \GloriaSopranoNotes }
           }
-          \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \GloriaAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \GloriaAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \GloriaTenoreNotes }
+          }
+          \new Lyrics \lyricsto Tenore \GloriaTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \BenigneBassoNotes }
+            \new Voice = "Basso" { \dynamicUp \GloriaBassoNotes }
           }
-          \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+          \new Lyrics \lyricsto Basso \GloriaBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \BenigneOrgano
+            \GloriaOrgano
           }
         >>
-        \new FiguredBass { \BenigneBassFigures }
+        \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 80 }
+      \midi { \tempo 2 = 120 }
     }
   }
 }

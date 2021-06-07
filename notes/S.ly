@@ -599,19 +599,219 @@ SiSopranoLyrics = \lyricmode {
   es. %516 finis
 }
 
-% SopranoNotes = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
-%
-% SopranoLyrics = \lyricmode {
-%
-% }
+GloriaSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+      \set Score.currentBarNumber = #555
+    \mvTr es'4\fE^\tutti es8 es es([ d)] c4
+    g' f8 es es8. d16 d4
+    es h c c8 g \noBreak
+    as2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut c1 \noBreak
+    es %560
+    h
+    d
+    c2 b!
+    a2. a4
+    g1 %565
+    r4 b8([ a)] g([ a)] b([ c)]
+    d2 d~
+    d4 c8([ b)] a([ b c a)]
+    h4 g c2
+    c4 c h2 %570
+    c4 es8[ d] c4 g
+    c c8[ d] es[ d] c4
+    r d8[ c] h2~
+    h8[ c d es] f4 d
+    g,2 d' %575
+    c1
+    r2 b!
+    d1
+    a
+    c %580
+    h4( g) c2
+    d2. d4
+    es2 es
+    g1
+    d %585
+    f
+    es2 d
+    c1
+    b2 b
+    c b~ %590
+    b es
+    g1
+    d
+    f
+    es4 g8[ f] es4 b %595
+    es es8[ f] g[ f] es4
+    r f8[ es] \once \tieDashed d2~
+    d4 f,8[ g] as4 f
+    g es b'2
+    b1( %600
+    c2) c
+    c1(
+    d2) d
+    r d
+    f1 %605
+    cis
+    e
+    d2 b
+    a1
+    g4 b8[ a] g4 d %610
+    g g8[ a] b[ c] d4
+    r a8[ g] \once \tieDashed fis2~
+    fis8[ g a b] c4 a
+    h g c2
+    c h %615
+    c4 es8[ d] c4 g
+    c c8[ d] es[ d] c4
+    r d8[ c] \once \tieDashed h2~
+    h8[ c d es] f4 d
+    g,2 c %620
+    b!1
+    c
+    \once \tieDashed b~
+    b
+    \once \tieDashed as~ %625
+    as
+    g2 g
+    r4 b8[( a] g[ a b c]
+    d2) d~
+    d4 c8[ b] a[ b c a] %630
+    b2 es
+    g1
+    d
+    f1
+    es2 c %635
+    es1
+    h
+    d~
+    d2 c4 b!
+    as c f d %640
+    h2 r
+    R1
+    r2 h
+    d1
+    \once \tieDashed c~ %645
+    c2 h
+    c r
+    R1
+    r2 h\pE
+    d1 %650
+    \once \tieDashed c~
+    c2 h
+    c \once \tieDashed c~\fE
+    c h
+    c r %655
+    \time 4/4 \tempoAmen c4 c c2
+    c\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}
 
+GloriaSopranoLyrics = \lyricmode {
+  Glo -- ri -- a Pa -- tri, %555
+  glo -- ri -- a Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto.
+  Si --
+  cut %560
+  e --
+  rat
+  in prin --
+  ci -- pi --
+  o %565
+  et nunc et
+  sem -- per __
+  et in __
+  sae -- cu -- la
+  sae -- cu -- lo -- %570
+  rum, a -- _ _
+  _ _ _ men,
+  a -- _
+  _ _
+  _ _ %575
+  men,
+  si --
+  cut
+  e --
+  rat %580
+  in __ prin --
+  ci -- pi --
+  o et
+  nunc
+  et %585
+  sem --
+  per et
+  in
+  sae -- cu --
+  la sae -- %590
+  cu --
+  lo --
+  rum,
+  a --
+  _ _ _ _ %595
+  _ _ _ men,
+  a -- _
+  _ _ _
+  _ _ men,
+  a -- %600
+  men,
+  a --
+  men,
+  a --
+  _ %605
+  _
+  _
+  _ _
+  _
+  men, a -- _ _ %610
+  _ _ _ men,
+  a -- _
+  _ _
+  _ _ men,
+  a -- men, %615
+  a -- _ _ _
+  _ _ _ \x men,
+  a -- \x _
+  _ _
+  _ men, %620
+  a --
+  _
+  _
 
+  _ %625
 
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+  _ men,
+  a --
+  men, __
+  a -- _ %630
+  men, a --
+  _
+  _
+  _
+  _ _ %635
+  _
+  _
+  _
+  _ _
+  _ _ _ _ %640
+  men,
+
+  a --
+  _
+  _ %645
+  _
+  men,
+
+  a --
+  _ %650
+  _
+  _
+  men, a --
+  _
+  men, %655
+  a -- men, a --
+  men. %657 FINIS
+}

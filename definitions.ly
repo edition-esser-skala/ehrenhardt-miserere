@@ -682,6 +682,9 @@ tempoAverte = \tempoMarkup "Largo"
 tempoRedde = \tempoMarkup "Allegro"
 tempoSi = \tempoMarkup "Largo"
 tempoBenigne = \tempoMarkup "Allegro"
+tempoGloria = \tempoMarkup "Adagio"
+  tempoSicut = \tempoMarkup "Alla breve"
+  tempoAmen = \tempoMarkup "Adagio"
 
 
 \include "notes/cor.ly"

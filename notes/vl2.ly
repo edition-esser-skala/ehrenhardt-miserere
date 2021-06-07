@@ -136,3 +136,109 @@ BenigneViolinoII = {
     f4 r r2 \bar "||" %54 finis
   }
 }
+
+GloriaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoGloria
+      \set Score.currentBarNumber = #555
+    g'4\fE g8 g-\critnote g f es4
+    es' d8 c c4 h
+    r f' es c \noBreak
+    c2 h\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*6 %564
+    r2 g %565
+    b1
+    fis
+    a
+    g2 es
+    d1\trill %570
+    c
+    r4 es'8 d c d es f
+    g4 g, g'2~
+    g4 f8 es d es f d
+    es4 c g'2~ %575
+    g fis
+    g4 b!8 a g4 d
+    r g8 a b c d4
+    r a8 g fis2~
+    fis8 g a b c4 a %580
+    d,2 g
+    f!1\trill
+    r2 es
+    g1
+    d %585
+    f
+    es2 d
+    c1
+    b2 b
+    c b %590
+    b g'
+    b1
+    f
+    as
+    g %595
+    r4 g8 f es f g as
+    b4 b, b'2~
+    b4 as8 g f g as f
+    g2 b,
+    b1 %600
+    c2 c
+    c1
+    d2 d
+    d4 f8 e d4 a
+    d d8 e f g a4 %605
+    r e8 d cis2~
+    cis8 d e f g4 e
+    a,2 d,
+    es! d
+    d1 %610
+    r4 b'8 a g a b c
+    d4 d, d'2~
+    d4 c8 b a b c a
+    h4 g c2~
+    c h %615
+    c4 es8 d c4 g
+    c c8 d es f g4
+    r d8 c h2~
+    h8 c d es f4 d
+    g,2 c %620
+    b!1
+    c
+    b
+    b
+    as %625
+    as
+    g
+    r4 b8 a g a b c
+    d4 d, d'2~
+    d4 c8 b a b c4 %630
+    b2 c
+    es1
+    b?
+    d
+    r2 c %635
+    es1
+    h
+    d~
+    d2 c4 b!
+    as c f d %640
+    h2 r
+    R1
+    r2 h
+    d1
+    c %645
+    c2 h
+    c r
+    R1
+    r2 h\pE
+    d1 %650
+    c
+    c2 h
+    c c,~\f
+    c h
+    c1 %655
+    \time 4/4 \tempoAmen c'4 c c2
+    c\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}

@@ -69,3 +69,109 @@ AverteTromboneI = {
     f2 e\fermata \bar "||" %271 finis
   }
 }
+
+GloriaTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoGloria
+      \set Score.currentBarNumber = #555
+    g'2\fE g4 g
+    g g g2
+    r4 g g g \noBreak
+    as2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*6 %564
+    r2 g %565
+    b1
+    fis
+    a
+    g2 es
+    d1 %570
+    c
+    r4 es c es
+    g2 g
+    r4 f d f
+    es c g'2 %575
+    g fis
+    g4 b! g d
+    g2 d
+    r4 a' fis2
+    fis4 a c,2 %580
+    d g
+    f!1
+    g2 r
+    r4 es c es
+    g2 g %585
+    r4 f d f
+    es c g'2
+    g4 as f es
+    d b es2
+    es d %590
+    es4 g es b
+    es g b2
+    r4 f d2
+    d4 f as2
+    r g %595
+    b1
+    f
+    as
+    g2 es
+    es4 d b d %600
+    f2 f
+    f4 es c es
+    g2 r
+    r4 f d a
+    d f a2 %605
+    r4 e cis2
+    cis4 e g2
+    a d,
+    es! d
+    d1 %610
+    r4 b' g b
+    d2 d,
+    r4 c' a c
+    g2 g
+    f!1 %615
+    es2 es
+    g1
+    d
+    f
+    es2 f %620
+    f4 e2 g4
+    r as f as
+    es! d2 f4
+    r g es g
+    d c2 es4 %625
+    r f d f
+    h,2 d
+    g4 a b! g
+    r a fis2
+    fis4 a c2 %630
+    g r
+    r b4 c
+    f,1
+    d2 f
+    g1 %635
+    r4 es c es
+    g2 g
+    r4 f d f
+    es2 g
+    as1 %640
+    g2 es
+    g1
+    d
+    f
+    f2 es4 d8 c %645
+    c2 h
+    c es\pE
+    g1
+    d
+    f %650
+    f2 es4 d8 c
+    c2 h
+    c g'\fE
+    g g
+    e1 %655
+    \time 4/4 \tempoAmen f4 g as2
+    g\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}

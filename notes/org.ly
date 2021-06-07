@@ -1181,16 +1181,194 @@ BenigneBassFigures = \figuremode {
   r8 <[6]>4 <7>8 \bo <[6 4]> \bc <[6 \l]>4.
   r16 <6 4>2 <[7 5]>4..
   r2. \bo <[6] 4>8 \bc <[5] 3>
-  r1 %54 finis
+  r1 %554 finis
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoGloria
+      \set Score.currentBarNumber = #555
+    \mvTr c1\fE-\tutti
+    c4 h8 c g2
+    r4 d' es e \noBreak
+    f2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut R1 \noBreak
+    r4 es8 d c d es f %560
+    g4 g, \once \tieDashed g'2~
+    g4 f8 es d es f d
+    es4 c g'2~
+    g fis
+    g1 %565
+    R1*11 %576
+    r2 g
+    b1
+    fis
+    a %580
+    g2 es
+    d1
+    r2 c
+    es1
+    h %585
+    d
+    c2 b!
+    as1
+    as2 g
+    f1 %590
+    es
+    r4 g'8 f es f g as
+    b4 b, \once \tieDashed b'2~
+    b4 as8 g f g as f
+    g2 es %595
+    g1
+    d
+    f
+    es4 g8 f es f g as
+    b4 b, \once \tieDashed b'2~ %600
+    b4 as8 g f g as b
+    c4 c, \once \tieDashed c'2~
+    c4 b8 a! g a b c
+    d4 d, r2
+    r4 f8 e d e f g %605
+    a4 a, \once \tieDashed a'2~
+    a4 g8 f e f g e
+    fis2 g~
+    g fis
+    g1 %610
+    R1*5 %615
+    r2 c,
+    es1
+    h
+    d
+    c2 as %620
+    g1
+    f
+    b4 b'8 c b as g f
+    es2 g
+    r4 as8 b as g f es %625
+    d2 f
+    r g
+    b1
+    fis
+    a %630
+    g2 r
+    r4 g8 f es f g as
+    b4 b, b'2
+    r4 d,8 c h c d h
+    c1 %635
+    r2 es
+    g1
+    d
+    es2 e
+    f2. as4 %640
+    g1
+    r2 c,
+    g'1
+    r2 h,
+    c f %645
+    g g,
+    c1
+    r4 \mvTr es8\pE-\senzaOrg d c d es f
+    g4 g, g'2
+    r4 d8 c h c d h %650
+    c2 f
+    g g,
+    c \mvTr c\fE-\colOrg
+    g' g,
+    c1 %655
+    \time 4/4 \tempoAmen f4 e f2
+    c\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  r1 %555
+  r4 <6 [5]> \bo <[6] 4> \bc <[5] _!>
+  r <6!> <6> <\t>
+  <_->2 <_!>
+  r1
+  r4 <6>2. %560
+  <_!>1
+  r2 <6!>
+  <6> <_->
+  <4 2> <6>
+  <_!>1 %565
+  r1*11 %576
+  r1
+  \bo <[6]>
+  <6>
+  <6\\> %580
+  \bc <[_!]>2 <6>
+  <7> <6!>
+  r1
+  <6>
+  q %585
+  <6!>
+  r2 <6>
+  <7> <6>
+  <4 2> <6>
+  \bo <7 [_-]> \bc <6 [\t]> %590
+  r1
+  r4 <[6]>2.
+  r1
+  <7->2. \bassFigureExtendersOn q8 q \bassFigureExtendersOff
+  <6>1 %595
+  q
+  q
+  <6 [_-]>
+  r
+  \bo <[4 \l]>4 <3>2. %600
+  <5 2>2 \bc <[_- \l]>
+  <4>4 <3>2.
+  <[5] 2>1
+  r
+  r4 <[6]>2. %605
+  <[5!] _+>1
+  \bo <[7 5! _+]>2. \bassFigureExtendersOn <7 5! _+>8 \bc <[7 5! _+]> \bassFigureExtendersOff
+  <6>2 <_->
+  <2> <6>
+  <_->1 %610
+  r1*5 %615
+  r1
+  <[6]>
+  <6>
+  <6!>
+  <6>2 q %620
+  <7>4 <6!>2.
+  \bo <[_-]>1
+  <4>4 \bc <[3]>2.
+  r2 <6>
+  r4 <5>2. %625
+  <[5-]>2 <6 [_-]>
+  r <_->
+  <6>1
+  q
+  <6\\> %630
+  r
+  r4 <6>2.
+  r1
+  r4 <6!> <6 [5]>2
+  r1 %635
+  r2 <6>
+  <_!>1
+  <6!>
+  <[7]>2 <6>
+  <[_-]>2. <6>4 %640
+  <_!>1
+  r
+  \bo <[6] _!>4 \bc <[5] \t>2.
+  r2 <6 [5]>
+  \bo <[4 \l]> <7 _-> %645
+  <6 4> \bc <[5 _!]>
+  r1
+  r
+  r
+  r %650
+  r
+  r
+  r
+  <4>2 <_!>
+  q1 %655
+  <_->4 <6> <_->2
+  <_!>1 %657 FINIS
+}

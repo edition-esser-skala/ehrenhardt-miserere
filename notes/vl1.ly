@@ -228,9 +228,113 @@ BenigneViolinoI = {
   }
 }
 
-% ViolinoI = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+GloriaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoGloria
+      \set Score.currentBarNumber = #555
+    es'4\fE es8 es es d c4
+    g' f8 es es4 d
+    es h c g' \noBreak
+    as2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut c,1 \noBreak
+    es %560
+    h
+    d
+    c2 b!
+    a2. a4
+    g1 %565
+    r4 b8 a g a b c
+    d4 d, d'2~
+    d4 c8 b a b c a
+    h4 g c2~
+    c h %570
+    c4 es8 d c4 g
+    c c8 d es f g4
+    r d8 c h2~
+    h8 c d es f4 d
+    g,2 d' %575
+    c1\trill
+    r2 b!
+    d1
+    a
+    c %580
+    h4 g c2
+    d1\trill
+    es
+    r4 es8 d c d es f
+    g4 g, g'2~ %585
+    g4 f8 es d es f d
+    es4 c g'2~
+    g4 as8 g f es d c
+    d4 b es2~
+    es d %590
+    es4 g8 f es4 b
+    es es8 f g as b4
+    r f8 es d2~
+    d8 es f g as2
+    r g %595
+    b1
+    f
+    as
+    g4 b, es2~
+    es4 d8 c b c d es %600
+    f4 f, f'2~
+    f4 es8 d c d es f
+    g4 g, g'2
+    r d
+    f1 %605
+    cis
+    e
+    d2 b
+    c1\trill
+    b4 b8 a g4 d %610
+    g g8 a b c d4
+    r4 a8 g fis2~
+    fis8 g a b c4 a
+    d,2 g
+    f!1\trill %615
+    es2 es'
+    g1
+    d
+    f
+    es2 f~ %620
+    f4 e2 f8 g
+    f,4 as'8 g f g as f
+    es4 d2 es8 f
+    es,4 g'8 f es f g es
+    d4 c2 d8 es %625
+    d,4 f'8 es d es f d
+    h2 g'4 d
+    g8 a b c d2
+    r4 a8 g fis2~
+    fis8 g a b c4 a %630
+    b2 es,
+    g1
+    d
+    f
+    es %635
+    r4 es8 d c d es f
+    g4 g, g'2~
+    g4 f8 es d es f4
+    es2 g
+    as1 %640
+    g2 es
+    g1
+    d
+    f~
+    f2 es4 d8 c %645
+    es2 d
+    c es\p
+    g1
+    d
+    f~ %650
+    f2 es4 d8 c
+    es2 d
+    c es,\f
+    d1\trill
+    c %655
+    \time 4/4 \tempoAmen f'4 g as2
+    g\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}

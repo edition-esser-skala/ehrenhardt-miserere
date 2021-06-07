@@ -633,13 +633,209 @@ SiAltoLyrics = \lyricmode {
   es. %516 finis
 }
 
-% AltoNotes = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+GloriaAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+      \set Score.currentBarNumber = #555
+    \mvTr g'4\fE^\tutti g8 g g([ f)] es4
+    g g8 g g8. g16 g4
+    r f8 f es4 g8 g \noBreak
+    f2 g\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*6 %564
+    r2 g %565
+    b1
+    fis
+    a
+    g2 es
+    d2. d4 %570
+    c1
+    r4 es8([ d)] c([ d)] es([ f)]
+    g2 \once \tieDashed g~
+    g4 f8([ es)] d([ es f d)]
+    es4 c g'2 %575
+    g4 g fis2
+    g4 b!8[ a] g4 d
+    g g8[ a] b[ a] g4
+    r a8[ g] fis2~
+    fis8[ g a b] c4 a %580
+    d,2 g
+    f!1
+    g2 r
+    r4 es8([ d] c[ d es g])
+    g2 g~ %585
+    g4 f8[ es] d[ es f d]
+    es4 c g'2~
+    g4 as?8[ g] f[ es d c]
+    d4 b es2~
+    es d %590
+    es4 g8[ f] es4 b
+    es es8[ f] g[ as] b4
+    r f8[ es] \once \tieDashed d2~
+    d8[ es f g] as4 f
+    r2 g %595
+    b1
+    f
+    as
+    g4 b, es2~
+    es4 d8[ c] b[ c d es] %600
+    f2 f~
+    f4 es8[ d] c[ d es f]
+    g2 g
+    r4 f8[ e] d4 a
+    d d8[ e] f[ g] a4 %605
+    r e8[ d] cis2~
+    cis8[ d e f] g4 e
+    a,2 d
+    es! d
+    d1 %610
+    r4 b'8[( a] g[ a b c]
+    d4) d, r2
+    r4 c'8[ b] a[ b c a]
+    g2 g
+    f!1 %615
+    es2 es
+    g1
+    d
+    f
+    es2 f~ %620
+    f4 e2 f8[ g]
+    r4 as8[ g] f4 as
+    es d2 es8[ f]
+    r4 g8[ f] es4 g
+    d c2 d8[ es] %625
+    r4 f8[ es] d4 f
+    h,2 g'4 d
+    g g8[ a] b[ a] g4
+    r a8[ g] \once \tieDashed fis2~
+    fis8[ g a b] c2 %630
+    b r
+    r b4 c
+    f,1
+    d2 g
+    g1 %635
+    r4 es8([ d] c[ d es f]
+    g2) g~
+    g4 f8[ es] d[ es f d]
+    es2 g
+    as1 %640
+    g2 es
+    g1
+    d
+    \once \tieDashed f~
+    f2 es4 d8[ c] %645
+    es2^\critnote d
+    c es\pE
+    g1
+    d
+    \once \tieDashed f~ %650
+    f2 es4 d8[ c]
+    es2^\critnote d
+    c \once \tieDashed g'~\fE
+    \once \tieDashed g~ g
+    e1 %655
+    \time 4/4 \tempoAmen f4 g as2
+    g\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}
+
+GloriaAltoLyrics = \lyricmode {
+  Glo -- ri -- a Pa -- tri, %555
+  glo -- ri -- a Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto.
+
+  Si -- %565
+  cut
+  e --
+  rat
+  in prin --
+  ci -- pi -- %570
+  o
+  et nunc et
+  sem -- per __
+  et in __
+  sae -- cu -- la %575
+  sae -- cu -- lo --
+  rum, a -- _ _
+  _ _ _ \xE men,
+  a -- \x _
+  _ _ %580
+  _ _
+  _
+  men,
+  a --
+  men, a -- %585
+  _ _
+  _ _ _
+  _ _
+  _ _ _
+  _ %590
+  men, a -- _ _
+  _ _ _ men,
+  a -- _
+  _ men,
+  a -- %595
+  _
+  _
+  _
+  _ _ _
+  _ _ %600
+  men, a --
+  _ _
+  _ men,
+  a -- _ _
+  _ _ _ \xE men, %605
+  a -- \x _
+  _ _
+  _ _
+  _ _
+  men, %610
+  a --
+  men,
+  a -- _
+  _ \xE men,
+  a -- \x %615
+  men, a --
+  _
+  _
+  _
+  _ _ %620
+  _ _
+  _ _ _
+  _ _ _
+  _ _ _
+  _ _ _ %625
+  _ _ _
+  _ _ _
+  _ _ _ men,
+  a -- _
+  _ %630
+  men,
+  a -- _
+  _
+  _ _
+  men, %635
+  a --
+  men, __
+  a -- _
+  _ _
+  _ %640
+  men, a --
+  _
+  _
+  _
+  _ _ %645
+  _ _
+  men, a --
+  _
+  _
+  _ %650
+  _ _
+  _ _
+  men, a --
+
+  men, %655
+  a -- men, a --
+  men. %657 FINIS
+}

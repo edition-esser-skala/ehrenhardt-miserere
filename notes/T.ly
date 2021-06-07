@@ -451,13 +451,197 @@ BenigneTenoreLyrics = \lyricmode {
   los. %549 finis
 }
 
-% TenoreNotes = {
-%   \relative c' {
-%     \clef "treble_8"
-%
-%   }
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+GloriaTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+      \set Score.currentBarNumber = #555
+    \mvTr c4\fE^\tutti c8 c c4 c
+    es d8 c c8. h16 h4
+    r d8 d c4 c8 c \noBreak
+    c2 h\fermata \bar "||"
+    \time 2/2 \tempoSicut R1*12 %570
+    r2 c
+    es1
+    h
+    d
+    c2 b! %575
+    a2. a4
+    g1
+    r4 b8([ a)] g([ a)] b([ c)]
+    d2 d~
+    d4 c8([ b)] a([ b c a)] %580
+    h4 g c2
+    c4 c h2
+    c4 es8[ d] c4 g
+    c c8[ d] es[ d] c4
+    r d8[ c] \once \tieDashed h2~ %585
+    h8[ c d es] f4 d
+    g,2 b
+    c1
+    f,2 g
+    as1 %590
+    g2 g
+    b1
+    f
+    as
+    g %595
+    r4 g8[ f] es[ f g as]
+    b2 \once \tieDashed b~
+    b4 as8[ g] f[ g as f]
+    g2 g
+    f1 %600
+    f2( as)
+    g1
+    g2( b)
+    a! f
+    a1 %605
+    e
+    g
+    fis2 g
+    a1
+    r2 g %610
+    b1
+    fis
+    a
+    g2 es'
+    d1 %615
+    c
+    r4 es,8[( d] c[ d es f])
+    g2 \once \tieDashed g~
+    g4 f8[ es] d[ es f d]
+    es4 c f2 %620
+    g1
+    as
+    f
+    \once \tieDashed es~
+    es %625
+    d2 d'
+    d b!
+    d1
+    a
+    c %630
+    d2 c
+    es1
+    b
+    d
+    es4 es8[( d] c4 g) %635
+    c1
+    r2 d
+    f f,
+    g g
+    f c' %640
+    d c
+    es1~
+    es4 d8[ c] h[ c] d4
+    g,2 g~
+    g as %645
+    g~ g
+    g c\pE
+    es1~
+    es4 d8[ c] h[ c] d4
+    g,2 g~ %650
+    g as
+    \once \tieDashed g~ g
+    g es'(\fE
+    d1)
+    c %655
+    \time 4/4 \tempoAmen as4 g f2
+    e\breve*1/2\fermata \bar "|." %657 FINIS
+  }
+}
+
+GloriaTenoreLyrics = \lyricmode {
+  Glo -- ri -- a Pa -- tri, %555
+  glo -- ri -- a Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto.
+
+  Si -- %571
+  cut
+  e --
+  rat
+  in prin -- %575
+  ci -- pi --
+  o
+  et nunc et
+  sem -- per __
+  et in __ %580
+  sae -- cu -- la
+  sae -- cu -- lo --
+  rum, a -- _ _
+  _ _ _ \xE men,
+  a -- _ %585
+  _ _
+  _ _
+  _
+  _ _
+  _ %590
+  men, a --
+  _
+  _
+  _
+  men, %595
+  a -- _
+  men, a --
+  _ _
+  men, a --
+  \x men, %600
+  a --
+  \xE men,
+  a --
+  men, a --
+  _ %605
+  _
+  _
+  _ _
+  \x men,
+  a -- %610
+  _
+  _
+  _
+  _ \xE men,
+  a -- %615
+  \x men,
+  a --
+  men, a --
+  _ _
+  _ _ _ %620
+  men,
+  a --
+  _
+  _
+  %625
+  _ _
+  men, a --
+  _
+  _
+  _ %630
+  \xE men, a --
+  _
+  _
+  _
+  men, a -- %635
+  \x men,
+  a --
+  _ _
+  \xE men, a --
+  _ _ %640
+  men, a --
+  _
+  _ _ _
+  \x men, a --
+  _ %645
+  _
+  men, a --
+  _
+  _ _ _
+  men, a -- %650
+  _
+  _
+  men, a --
+  
+  men, %655
+  a -- \xE men, a --
+  \x men. %657 FINIS
+}
