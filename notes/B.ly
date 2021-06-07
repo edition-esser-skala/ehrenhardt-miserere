@@ -352,6 +352,66 @@ SiBassoLyrics = \lyricmode {
   es. %516 finis
 }
 
+BenigneBassoNotes = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \autoBeamOff \tempoBenigne
+      \set Score.currentBarNumber = #517
+    R1*6 %522
+    r2 r4 r8 \mvTr g'\pE^\solo
+    g([ e)] c4 r2
+    r4 r8 g' g f16 e a4~ %525
+    a8 g16([ f]) g8 g g( f4 e8
+    d) g, e' e f[ e f d]
+    g[ f g e] a4. f8
+    g4 e8[( g] f[ e)] d4
+    c r r2 %530
+    R1*5 %535
+    f8 a16([ b)] c8 f, f4 es
+    es4 c'16([ b32 a g f)] es16 es8. d16 d4
+    d r8 d d( c4) b8
+    b a r4 r2
+    c'16([ a g f] c'[ a)] g([ f)] b8. b,16 b4 %540
+    d'16([ h a g)] d'([ h)] a([ g)] c8 c, r4
+    c'4 b a8([ cis,)] d([ f)]
+    g([ e] a4) d, r
+    R1
+    r4 h'8 h c([ c,)] c4 %545
+    r a'8 a b([ b,)] b4
+    f'16([ es32 f)] g16 f es[( d32 es f16 es] d4.) g8
+    e([ c)] f4 f( e8) e
+    f4 r r2
+    R1*4 %553
+    R1\fermata \bar "||" %554 finis
+  }
+}
+
+BenigneBassoLyrics = \lyricmode {
+  Be -- %523
+  ni -- gne,
+  be -- ni -- gne fac, Do -- %525
+  mi -- ne, in bo --
+  na vo -- lun -- ta --
+  _ _ te
+  tu -- a __ Si --
+  on, %530
+
+  ut ae -- di -- fi -- cen -- tur %536
+  mu -- ri __ Ie -- ru -- sa -- lem.
+  Tunc, tunc ac -- cep --
+  ta -- bis
+  sa -- cri -- fi -- ci -- um, %540
+  ob -- la -- ti -- o -- nes
+  et, et ho -- lo --
+  cau -- sta,
+
+  tunc im -- po -- nent, %545
+  tunc im -- po -- nent
+  \xE su -- per \x al -- ta -- re
+  tu -- um vi -- tu --
+  los. %549 finis
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

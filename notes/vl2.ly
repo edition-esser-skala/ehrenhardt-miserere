@@ -94,3 +94,45 @@ AverteViolinoII = {
     f2 e\fermata \bar "||" %271 finis
   }
 }
+
+BenigneViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #517
+    f16\fE f32 g a16 f c' c32 d e16 c f8 f, r16 c' c d
+    c b8 c16 b a8 b16 a8 g r16 a a b
+    g f32 g a16 g f e32 f g16 f f8 e r16 e' e16.(\trill d64 e)
+    f16. f32 f8 r16 f f16.(\trill e64 f) g16. g32 g8 r16 g g16.(\trill f64 g) %520
+    f32( g a8) f16 e32( f g8) e16 f c d f, f8 e\trill
+    f4 r r r16 c' c d
+    c b8 c16 b a8 b16 a8 g r4
+    r r16 g g a g f8 g16 f e8 f16
+    e8 d r4 r2 %525
+    R1*4
+    c'16\fE c32 d e16 c g' g32 a h16 g c8 c, r16 e e f %530
+    d c32 d e16 d c h32 c d16 c c8 h r16 h h16.(\trill a64 h)
+    c16. c32 c8 r16 c c16.(\trill h64 c) d16. d32 d8 r16 d d16.(\trill c64 d)
+    c32( d e8) g16 h,32( c d8) f16 e8 c4 h8
+    c c, r4 r2
+    r f16\p f32 g a16 f c' c32 d e16 c %535
+    f8 f, r4 r2
+    R1
+    b16 b32 c d16 b b'4 r2
+    r b,32 c d16 c b f'8 b,
+    r2 b32 c d16 c b f'8 b, %540
+    g'4 r c,32 d es16 d c g'8 c,
+    r2 cis32 d e16 d cis d32 e f16 e d
+    d,8 e-\critnote e4 f'16\f e32 f g16 f e d32 e f16 e
+    d cis d4 cis8\trill d d, r4
+    h'32\pE c d16 c h g'4 r2 %545
+    a,32 b c16 b a f'4 r2
+    R1*2
+    f,16\fE f32 g a16 f c' c32 d e16 c f8 f, r16 c'16 c d
+    c b8 c16 b a8 b16 a8 g r16 a a b
+    g f32 g a16 g f e32 f g16 f f8 e r16 e' e16.(\trill d64 e) %550
+    f16. f32 f8 r16 f f16.(\trill e64 f) g16. g32 g8 r16 g g16.(\trill f64 g)
+    f32( g a8) f16 e32( f g8) e16 f c d f, f8 e\trill
+    f4 r r2 \bar "||" %54 finis
+  }
+}

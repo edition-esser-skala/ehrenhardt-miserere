@@ -611,11 +611,7 @@ SiSopranoLyrics = \lyricmode {
 % }
 
 
-% Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-% ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-% Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-% ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-% tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+
 % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
 % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
 % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.

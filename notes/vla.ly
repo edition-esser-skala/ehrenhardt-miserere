@@ -87,3 +87,36 @@ AverteViola = {
     c c c2\fermata \bar "||" %271 finis
   }
 }
+
+BenigneViola = {
+  \relative c' {
+    \clef alto
+    \key f \major \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #517
+    c4\fE r8 g' a f f f
+    e c c d c16 c e g c8 c,
+    c c c d c e16 g c8 c,
+    r16 c' h c c,8 c' r16 c h c c,8 c' %520
+    f, f c c f f c c16 b
+    a4 r r r8 f'
+    g c, c d c c r4
+    r r8 c d g g a
+    g g r4 r2 %525
+    R1*4
+    e8\fE e h d e e e g %530
+    g g g a g g g g
+    g g g g g g g g
+    c, c g' g g16 f e8 g g16 f
+    e4 r r2
+    R1*8 %542
+    r2 r8 a\fE a a
+    a b^\critnote a a a4 r
+    R1*4 %548
+    c4\fE r8 g a f f f
+    e c c d c e16 g c4 %550
+    c,8 c c d c e16 g c8 c,
+    c c c c c c c c
+    f f c c f f c c16 b
+    a4 r r2\fermata \bar "||" %554 finis
+  }
+}

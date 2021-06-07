@@ -318,54 +318,105 @@
   %     \midi { \tempo 4. = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     title = "Q U O N I A M   S I   V O L U I S S E S"
+  %   }
+  %   \tocSubsection "1.6" "Quoniam si voluisses"
+  %   \paper {
+  %     system-system-spacing.basic-distance = #25
+  %     system-system-spacing.minimum-distance = #25
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \SiSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \SiSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \SiAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \SiAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \SiTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \SiTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \SiBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \SiBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \SiOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \SiBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 75 }
+  %   }
+  % }
   \bookpart {
     \header {
-      title = "Q U O N I A M   S I   V O L U I S S E S"
+      title = "B E N I G N E   F A C"
     }
-    \tocSubsection "1.6" "Quoniam si voluisses"
-    \paper {
-      system-system-spacing.basic-distance = #25
-      system-system-spacing.minimum-distance = #25
-      systems-per-page = #2
-    }
+    \tocSubsection "1.7" "Benigne fac"
+    \paper { systems-per-page = #2 }
     \score {
       <<
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \BenigneViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \BenigneViolinoII
+            }
+          >>
+          \new Staff {
+            \set Staff.instrumentName = "vla"
+            \BenigneViola
+          }
+        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \SiSopranoNotes }
-          }
-          \new Lyrics \lyricsto Soprano \SiSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \SiAltoNotes }
-          }
-          \new Lyrics \lyricsto Alto \SiAltoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \SiTenoreNotes }
+            \new Voice = "Tenore" { \dynamicUp \BenigneTenoreNotes }
           }
-          \new Lyrics \lyricsto Tenore \SiTenoreLyrics
+          \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \SiBassoNotes }
+            \new Voice = "Basso" { \dynamicUp \BenigneBassoNotes }
           }
-          \new Lyrics \lyricsto Basso \SiBassoLyrics
+          \new Lyrics \lyricsto Basso \BenigneBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \SiOrgano
+            \BenigneOrgano
           }
         >>
-        \new FiguredBass { \SiBassFigures }
+        \new FiguredBass { \BenigneBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 75 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

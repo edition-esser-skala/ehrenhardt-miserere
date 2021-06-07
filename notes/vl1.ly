@@ -186,6 +186,48 @@ AverteViolinoI = {
   }
 }
 
+BenigneViolinoI = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #517
+    f16\fE f32 g a16 f c' c32 d e16 c f8 f, r16 a' a b
+    a g8 a16 g f8 g16 f8 e r16 c c d
+    b a32 b c16 b a g32 a b16 a a8 g r16 g' g16.(\trill f64 g)
+    a16. a32 a8 r16 a a16.(\trill g64 a) b16. b32 b8 r16 b b16.(\trill a64 b) %520
+    a32( b c8) a16 g32( a b8) g16 a e f f, a8 g\trillE
+    f4 r r r16 a' a b
+    a g8 a16 g f8 g16 f8 e r4
+    r r16 e e f e d8 e16 d c8 d16
+    c8 h r4 r2 %525
+    R1*4
+    c16\fE c32 d e16 c g' g32 a h16 g c8 c, r16 g' g a %530
+    f e32 f g16 f e d32 e f16 e d8 g, r16 d' d16.(\trill c64 d)
+    e16. e32 e8 r16 e e16.(\trill d64 e) f16. f32 f8 r16 f f16.(\trill e64 f)
+    e32( f g8) c,16 d32( e f8 h,16) e h c e, d8 h'
+    c,4 r r2
+    r f16\p f32 g a16 f c' c32 d e16 c %535
+    f8 f, r4 r2
+    r b16 b32 c d16 b f' f32 g a16 f
+    b8 b, r4 r2
+    f'32 g a16 g f c'8 f, r2
+    f32 g a16 g f c'8 f, r2 %540
+    g32 a h16 a g d'8 g, r2
+    fis32 g a16 g fis g32 a b16 a g r2
+    d,4 cis a''16\f g32 a b16 a g f32 g a16 g
+    f cis d g f8 e d d, r4
+    r2 c'32\pE d es16 d c g'4 %545
+    r2 d32 es f16 es d b'4
+    R1*2
+    f,16\fE f32 g a16 f c' c32 d e16 c f8 f, r16 a' a b
+    a g8 a16 g f8 g16 f8 e r16 c c d %550
+    b a32 b c16 b a g32 a b16 a a8 g r16 g' g16.(\trill f64 g)
+    a16. a32 a8 r16 a a16.(\trill g64 a) b16. b32 b8 r16 b b16.(\trill a64 b)
+    \slurDashed a32( b c8) a16 g32( a b8) \slurSolid g16 a16 e f f, a8 g\trill
+    f4 r r2\fermata \bar "||" %554 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

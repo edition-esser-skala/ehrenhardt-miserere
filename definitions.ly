@@ -681,6 +681,7 @@ tempoTibi = \tempoMarkup "[Andante]"
 tempoAverte = \tempoMarkup "Largo"
 tempoRedde = \tempoMarkup "Allegro"
 tempoSi = \tempoMarkup "Largo"
+tempoBenigne = \tempoMarkup "Allegro"
 
 
 \include "notes/cor.ly"

@@ -389,6 +389,68 @@ SiTenoreLyrics = \lyricmode {
   es. %516 finis
 }
 
+BenigneTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \major \time 4/4 \autoBeamOff \tempoBenigne
+      \set Score.currentBarNumber = #517
+    R1*5 %521
+    r4 r8 \mvTr c\pE^\solo c([ a)] f4
+    R1*2
+    r4 r8 e' e d16 c f4~ %525
+    f8 e16([ d]) e8 e e( d4 c8
+    h8) a16([ g)] c([ d32 c)] h16([ c)] a8[ h16 c] d[ e32 d c16 d]
+    h8[ c16 d] e[ f32 e d16 e] c8[ d16 e] f8 a,
+    h8[( a16 g]) c4( d16[ h c a]) \appoggiatura c8 h4\trill
+    c r r2 %530
+    R1*3
+    c8 e16([ f)] g8 c, c4\trill b!
+    b g'16([ f32 e d c)] b16 b8. a16 a4 %535
+    R1*2
+    f'4 r8 f f( es4) d8
+    d c r c f16([ d c b)] f'([ d c b)]
+    c8 f,  c' c f16([ d)] c([ b)] f'([ d)] c([ b)] %540
+    g'8. g,16 g4 g'16([ es d c)] g'([ es)] d([ c)]
+    fis8([ e16 d)] g8 g g([ f16 e] f8) e16([ d)]
+    d4( e)\trill d r
+    r2 r4 f8 f
+    f([ g,)] g4 r es'8 es %545
+    es8([ f,)] f4 r8 d' d es32([ d c16)]
+    d16[ c32 d es16 d] c[ b32 c d16 c] b8[ f b] b
+    b4 a8([ f')] a,4( g8) g
+    f4 r r2
+    R1*4 %553
+    R1\fermata \bar "||" %554 finis
+  }
+}
+
+BenigneTenoreLyrics = \lyricmode {
+  Be -- ni -- gne, %522
+
+  be -- ni -- gne fac, Do -- %525
+  mi -- ne, in bo --
+  na vo -- lun -- ta -- _
+  _ _ _ _ te
+  tu -- a __ Si --
+  on, %530
+
+  ut ae -- di -- fi -- cen -- tur %534
+  mu -- ri __ Ie -- ru -- sa -- lem. %535
+
+  Tunc, tunc ac -- cep -- %538
+  ta -- bis, tunc ac -- cep --
+  ta -- bis sa -- cri -- fi -- ci -- um iu -- %540
+  sti -- ti -- ae, ob -- la -- ti --
+  o -- nes et ho -- lo --
+  cau -- sta,
+  tunc im --
+  po -- nent, tunc im -- %545
+  po -- nent su -- per al --
+  ta -- _ _ re
+  tu -- um vi -- tu --
+  los. %549 finis
+}
+
 % TenoreNotes = {
 %   \relative c' {
 %     \clef "treble_8"

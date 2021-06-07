@@ -1097,6 +1097,93 @@ SiBassFigures = \figuremode {
   <_->1 %516 finis
 }
 
+BenigneOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #517
+    \mvTr f4\fE-\solo r8 c f, a16 c f8 f
+    g e f h, c16 c e g c8 c,
+    r e f h, c16 c e g c8 c,
+    r16 c' h? c c,8 c' r16 c h? c c,8 c' %520
+    r f, r c f b, c c,
+    f4 r r r8 f'
+    g e f h, c c, r4
+    r r8 c'' h g c fis,
+    g g, c2\pE a8 h %525
+    c2 h4 c
+    g r8 e' f e d f
+    g f e g a4 d,
+    g, r8 c h c g' g,
+    c\f c' g4 c,8 e16 g c8 c, %530
+    r h' c fis, g16 g, h d g8 g,
+    r16 g c e g8 g, r16 g h d g8 g,
+    r c' r g c,16 d e a g8 g,
+    c4 r d8\pE e16 f g8 f
+    e4 r8 c f f, r c' %535
+    f,4 r g8 a16 b c8 b
+    a4 r8 f b4 r8 f'
+    b, b' r b, a4 b
+    f r d'8 d d es
+    f4 r d8 d d d %540
+    h h h h c c c c
+    c4 b a8 cis d f,
+    g e a a d d'4 cis8
+    d g,^\critnote a a, d4 r
+    g8 a h g c4 g8 es %545
+    c a f a b4 b'
+    r8 b,4 a8 b4 r8 g
+    c4 f, c'2
+    f,8\f f' c4 f,8 a16 c f8 f
+    g e f h, c e16 g c8 c, %550
+    r e f h, c16 c e g c8 c,
+    r16 c' h c c,8 c' r16 c h c c,8 c'
+    r f, r c f b, c c,
+    f4 r r2\fermata \bar "||" %554 finis
+  }
+}
+
+BenigneBassFigures = \figuremode {
+  r1 %517
+  r8 <6>4 <7>8 \bo <[6 4]> \bc <[6 \l]>4.
+  r8 <6>4 <7>8 \bo <[6 4]> \bc <[6 \l]>4.
+  r16 <[6] 4>2 <[7 5]>4.. %520
+  r2. \bo <[6] 4>8 \bc <[5] 3>
+  r1
+  r8 <6>4 <7>8 \bo <[6] 4>8 \bc <[5] 3>4.
+  r2 <6>8 <[_!]>4 <7>8
+  \bo <[6 4]>8 \bc <[5 _!]> <5>2 <6>8 q %525
+  \bo <[6] 4>4 \bc <[5] 3> \bo <[6 4]>8 <5 3> <\t \t> \bc <[3 1]>
+  \bo <[_!]>4. \bc <[6]>2 <6>8
+  \bo <[_!]>4 \bc <[5!]>8 <6 [_!]> r2
+  <_!> <6>4 <4>8 <_!>
+  r4 <[_!]>2. %530
+  r8 <6>4 \bo <[7]>8 <4> \bc <[6]>4.
+  r16 <6 4>2 <[7 _!]>4..
+  r4. <7 [_!]>4 <6>8 <4> <_!>
+  r2 <7>4 <_->
+  <6 5>2 <4>8 <3>4. %535
+  r2 <7>4 <[_-]>
+  <6 [5-]>2 \bo <[4-]>8 \bc <[3]>4.
+  r2 \bo <[6 4]>8 <5- 3> <\t \t> <3 1>
+  <6 4> \bc <[5 3]>4. <6>2
+  r <6> %540
+  q <[_-]>
+  <4+ 2>4 <6> <7 _+>4. <6>8
+  <6 5>4 <_+>2 <2>8 <6>
+  r4 \bo <[6] 4>8 \bc <[5] _+> r2
+  <[7 _!]>4 <6 5> <_->4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %545
+  <[6 _-]>4 <7->2.
+  r4 \bo <[4-] 2>8 \bc <[6]> r2
+  \bo <[7] _!>2 <6 4>4 \bc <[5] 3>
+  r1
+  r8 <[6]>4 <7>8 \bo <[6 4]> \bc <[6 \l]>4. %550
+  r8 <[6]>4 <7>8 \bo <[6 4]> \bc <[6 \l]>4.
+  r16 <6 4>2 <[7 5]>4..
+  r2. \bo <[6] 4>8 \bc <[5] 3>
+  r1 %54 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass
