@@ -11,6 +11,7 @@
 \book {
   \bookpart {
     \header {
+      number = "1"
       title = "M I S E R E R E"
     }
     \paper { indent = 3\cm }
@@ -93,9 +94,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "Q U O N I A M   I N I Q U I T A T E M"
+      number = "2"
+      title = "Q U O N I A M   I N I Q U I T A T E M"
     }
-    \tocSubsection "1.2" "Quoniam iniquitatem"
+    \tocSection "2" "Quoniam iniquitatem"
     \paper { systems-per-page = #3 }
     \score {
       <<
@@ -133,9 +135,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
+      number = "3"
+      title = "T I B I   S O L I   P E C C A V I"
     }
-    \tocSubsection "1.3" "Tibi soli peccavi"
+    \tocSection "3" "Tibi soli peccavi"
     \score {
       <<
         \new Staff {
@@ -200,9 +203,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "A V E R T E   F A C I E M   T U A M"
+      number = "4"
+      title = "A V E R T E   F A C I E M   T U A M"
     }
-    \tocSubsection "1.4" "Averte faciem tuam"
+    \tocSection "4" "Averte faciem tuam"
     \score {
       <<
         \new StaffGroup <<
@@ -275,9 +279,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "R E D D E   M I H I   L A E T I T I A M"
+      number = "5"
+      title = "R E D D E   M I H I   L A E T I T I A M"
     }
-    \tocSubsection "1.5" "Redde mihi laetitiam"
+    \tocSection "5" "Redde mihi laetitiam"
     \paper { systems-per-page = #3 }
     \score {
       <<
@@ -313,9 +318,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "Q U O N I A M   S I   V O L U I S S E S"
+      number = "6"
+      title = "Q U O N I A M   S I   V O L U I S S E S"
     }
-    \tocSubsection "1.6" "Quoniam si voluisses"
+    \tocSection "6" "Quoniam si voluisses"
     \paper {
       system-system-spacing.basic-distance = #25
       system-system-spacing.minimum-distance = #25
@@ -363,9 +369,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "B E N I G N E   F A C"
+      number = "7"
+      title = "B E N I G N E   F A C"
     }
-    \tocSubsection "1.7" "Benigne fac"
+    \tocSection "7" "Benigne fac"
     \paper { systems-per-page = #2 }
     \score {
       <<
@@ -414,9 +421,10 @@
   }
   \bookpart {
     \header {
-      subtitle = "G L O R I A   P A T R I"
+      number = "8"
+      title = "G L O R I A   P A T R I"
     }
-    \tocSubsection "1.8" "Gloria Patri"
+    \tocSection "8" "Gloria Patri"
     \score {
       <<
         \new StaffGroup <<

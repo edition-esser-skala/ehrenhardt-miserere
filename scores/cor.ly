@@ -45,7 +45,8 @@
 \book {
   \bookpart {
     \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
+      number = "3"
+      title = "T I B I   S O L I   P E C C A V I"
     }
     \paper { indent = 2\cm }
     \score {

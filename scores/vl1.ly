@@ -45,6 +45,7 @@
 \book {
   \bookpart {
     \header {
+      number = "1"
       title = "M I S E R E R E"
     }
     \paper { indent = 2\cm }
@@ -59,7 +60,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
+      number = "3"
+      title = "T I B I   S O L I   P E C C A V I"
     }
     \score {
       <<
@@ -69,7 +71,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "A V E R T E   F A C I E M   T U A M"
+      number = "4"
+      title = "A V E R T E   F A C I E M   T U A M"
     }
     \paper { systems-per-page = #4 }
     \score {
@@ -80,7 +83,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "B E N I G N E   F A C"
+      number = "7"
+      title = "B E N I G N E   F A C"
     }
     \score {
       <<
@@ -90,7 +94,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "G L O R I A   P A T R I"
+      number = "8"
+      title = "G L O R I A   P A T R I"
     }
     \score {
       <<

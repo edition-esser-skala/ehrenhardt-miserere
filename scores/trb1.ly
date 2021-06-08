@@ -45,6 +45,7 @@
 \book {
   \bookpart {
     \header {
+      number = "1"
       title = "M I S E R E R E"
     }
     \paper {
@@ -62,7 +63,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "A V E R T E   F A C I E M   T U A M"
+      number = "4"
+      title = "A V E R T E   F A C I E M   T U A M"
     }
     \paper { systems-per-page = #4 }
     \score {
@@ -73,7 +75,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "G L O R I A   P A T R I"
+      number = "8"
+      title = "G L O R I A   P A T R I"
     }
     \score {
       <<

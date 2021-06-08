@@ -45,6 +45,7 @@
 \book {
   \bookpart {
     \header {
+      number = "1"
       title = "M I S E R E R E"
     }
     \paper { indent = 2\cm }
@@ -60,7 +61,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "Q U O N I A M   I N I Q U I T A T E M"
+      number = "2"
+      title = "Q U O N I A M   I N I Q U I T A T E M"
     }
     \score {
       <<
@@ -73,7 +75,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
+      number = "3"
+      title = "T I B I   S O L I   P E C C A V I"
     }
     \score {
       <<
@@ -86,7 +89,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "A V E R T E   F A C I E M   T U A M"
+      number = "4"
+      title = "A V E R T E   F A C I E M   T U A M"
     }
     \paper { systems-per-page = #6 }
     \score {
@@ -100,7 +104,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "R E D D E   M I H I   L A E T I T I A M"
+      number = "5"
+      title = "R E D D E   M I H I   L A E T I T I A M"
     }
     \score {
       <<
@@ -113,7 +118,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "Q U O N I A M   S I   V O L U I S S E S"
+      number = "6"
+      title = "Q U O N I A M   S I   V O L U I S S E S"
     }
     \paper { systems-per-page = #5 }
     \score {
@@ -127,7 +133,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "B E N I G N E   F A C"
+      number = "7"
+      title = "B E N I G N E   F A C"
     }
     \score {
       <<
@@ -140,7 +147,8 @@
   }
   \bookpart {
     \header {
-      subtitle = "G L O R I A   P A T R I"
+      number = "8"
+      title = "G L O R I A   P A T R I"
     }
     \score {
       <<

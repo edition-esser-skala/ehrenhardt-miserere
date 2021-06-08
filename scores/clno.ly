@@ -45,7 +45,8 @@
 \book {
   \bookpart {
     \header {
-      subtitle = "R E D D E   M I H I   L A E T I T I A M"
+      number = "5"
+      title = "R E D D E   M I H I   L A E T I T I A M"
     }
     \paper { indent = 2\cm }
     \score {
