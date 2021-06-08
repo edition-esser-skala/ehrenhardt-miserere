@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "org"
+    instrumentName = "vl 2"
   }
 }
 
@@ -51,23 +51,9 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \MiserereOrgano
+          \set Staff.instrumentName = "Violino II"
+          \MiserereViolinoII
         }
-        \new FiguredBass { \MiserereBassFigures }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "Q U O N I A M   I N I Q U I T A T E M"
-    }
-    \score {
-      <<
-        \new Staff {
-          \QuoniamOrgano
-        }
-        \new FiguredBass { \QuoniamBassFigures }
       >>
     }
   }
@@ -75,12 +61,10 @@
     \header {
       subtitle = "T I B I   S O L I   P E C C A V I"
     }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff {
-          \TibiOrgano
-        }
-        \new FiguredBass { \TibiBassFigures }
+        \new Staff { \TibiViolinoII }
       >>
     }
   }
@@ -88,40 +72,10 @@
     \header {
       subtitle = "A V E R T E   F A C I E M   T U A M"
     }
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff {
-          \AverteOrgano
-        }
-        \new FiguredBass { \AverteBassFigures }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "R E D D E   M I H I   L A E T I T I A M"
-    }
-    \score {
-      <<
-        \new Staff {
-          \ReddeOrgano
-        }
-        \new FiguredBass { \ReddeBassFigures }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "Q U O N I A M   S I   V O L U I S S E S"
-    }
-    \paper { systems-per-page = #5 }
-    \score {
-      <<
-        \new Staff {
-          \SiOrgano
-        }
-        \new FiguredBass { \SiBassFigures }
+        \new Staff { \AverteViolinoII }
       >>
     }
   }
@@ -131,10 +85,7 @@
     }
     \score {
       <<
-        \new Staff {
-          \BenigneOrgano
-        }
-        \new FiguredBass { \BenigneBassFigures }
+        \new Staff { \BenigneViolinoII }
       >>
     }
   }
@@ -144,10 +95,7 @@
     }
     \score {
       <<
-        \new Staff {
-          \GloriaOrgano
-        }
-        \new FiguredBass { \GloriaBassFigures }
+        \new Staff { \GloriaViolinoII }
       >>
     }
   }

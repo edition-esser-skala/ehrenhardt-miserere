@@ -93,7 +93,7 @@
   }
   \bookpart {
     \header {
-      title = "Q U O N I A M   I N I Q U I T A T E M"
+      subtitle = "Q U O N I A M   I N I Q U I T A T E M"
     }
     \tocSubsection "1.2" "Quoniam iniquitatem"
     \paper { systems-per-page = #3 }
@@ -200,7 +200,7 @@
   }
   \bookpart {
     \header {
-      title = "A V E R T E   F A C I E M   T U A M"
+      subtitle = "A V E R T E   F A C I E M   T U A M"
     }
     \tocSubsection "1.4" "Averte faciem tuam"
     \score {
@@ -275,7 +275,7 @@
   }
   \bookpart {
     \header {
-      title = "R E D D E   M I H I   L A E T I T I A M"
+      subtitle = "R E D D E   M I H I   L A E T I T I A M"
     }
     \tocSubsection "1.5" "Redde mihi laetitiam"
     \paper { systems-per-page = #3 }
@@ -313,7 +313,7 @@
   }
   \bookpart {
     \header {
-      title = "Q U O N I A M   S I   V O L U I S S E S"
+      subtitle = "Q U O N I A M   S I   V O L U I S S E S"
     }
     \tocSubsection "1.6" "Quoniam si voluisses"
     \paper {
@@ -363,7 +363,7 @@
   }
   \bookpart {
     \header {
-      title = "B E N I G N E   F A C"
+      subtitle = "B E N I G N E   F A C"
     }
     \tocSubsection "1.7" "Benigne fac"
     \paper { systems-per-page = #2 }
@@ -414,7 +414,7 @@
   }
   \bookpart {
     \header {
-      title = "G L O R I A   P A T R I"
+      subtitle = "G L O R I A   P A T R I"
     }
     \tocSubsection "1.8" "Gloria Patri"
     \score {

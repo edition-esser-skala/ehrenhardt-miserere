@@ -38,63 +38,22 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "cor"
   }
 }
 
 \book {
   \bookpart {
     \header {
-      title = "M I S E R E R E"
+      subtitle = "T I B I   S O L I   P E C C A V I"
     }
     \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \MiserereViolinoI
+          \set Staff.instrumentName = \markup \center-column { "Corno" "da caccia" "in Es" }
+          \TibiCorno
         }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
-    }
-    \score {
-      <<
-        \new Staff { \TibiViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "A V E R T E   F A C I E M   T U A M"
-    }
-    \paper { systems-per-page = #4 }
-    \score {
-      <<
-        \new Staff { \AverteViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "B E N I G N E   F A C"
-    }
-    \score {
-      <<
-        \new Staff { \BenigneViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "G L O R I A   P A T R I"
-    }
-    \score {
-      <<
-        \new Staff { \GloriaViolinoI }
       >>
     }
   }

@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "trb 2"
   }
 }
 
@@ -47,23 +47,16 @@
     \header {
       title = "M I S E R E R E"
     }
-    \paper { indent = 2\cm }
+    \paper {
+      indent = 2.5\cm
+      systems-per-page = #6
+    }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \MiserereViolinoI
+          \set Staff.instrumentName = "Trombone II"
+          \MiserereTromboneII
         }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "T I B I   S O L I   P E C C A V I"
-    }
-    \score {
-      <<
-        \new Staff { \TibiViolinoI }
       >>
     }
   }
@@ -74,17 +67,7 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \AverteViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \header {
-      subtitle = "B E N I G N E   F A C"
-    }
-    \score {
-      <<
-        \new Staff { \BenigneViolinoI }
+        \new Staff { \AverteTromboneII }
       >>
     }
   }
@@ -94,7 +77,7 @@
     }
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaTromboneII }
       >>
     }
   }
