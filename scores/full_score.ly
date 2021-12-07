@@ -1,21 +1,27 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
+\include "score_settings/full-score.ly"
 
-\paper {
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+paperFourStaves = \paper {
+  system-system-spacing.basic-distance = #22
+  system-system-spacing.minimum-distance = #22
+  systems-per-page = #3
 }
 
-#(set-global-staff-size 15.87)
+paperFiveStaves = \paper {
+  system-system-spacing.basic-distance = #30
+  system-system-spacing.minimum-distance = #30
+  systems-per-page = #2
+}
+
+paperSixStaves = \paper { systems-per-page = #2 }
 
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "M I S E R E R E"
-    }
+    \section "1" "Miserere"
+    \addTocEntry
     \paper { indent = 3\cm }
-    \tocSection "1" "Miserere"
     \score {
       <<
         \new StaffGroup <<
@@ -50,25 +56,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \MiserereSopranoNotes }
           }
           \new Lyrics \lyricsto Soprano \MiserereSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \MiserereAltoNotes }
           }
           \new Lyrics \lyricsto Alto \MiserereAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \MiserereTenoreNotes }
           }
           \new Lyrics \lyricsto Tenore \MiserereTenoreLyrics
@@ -93,12 +93,9 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "Q U O N I A M   I N I Q U I T A T E M"
-    }
-    \tocSection "2" "Quoniam iniquitatem"
-    \paper { systems-per-page = #3 }
+    \section "2" "Quoniam iniquitatem"
+    \addTocEntry
+    \paperFourStaves
     \score {
       <<
         \new ChoirStaff <<
@@ -134,15 +131,12 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "T I B I   S O L I   P E C C A V I"
-    }
-    \tocSection "3" "Tibi soli peccavi"
+    \section "3" "Tibi soli peccavi"
+    \addTocEntry
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "cor da" "caccia" "(Es)" }
+          \set Staff.instrumentName = \markup \center-column { "cor da" \transposedNameShort "caccia" "E" "flat" }
           % \transpose c es
           \TibiCorno
         }
@@ -202,11 +196,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "A V E R T E   F A C I E M   T U A M"
-    }
-    \tocSection "4" "Averte faciem tuam"
+    \section "4" "Averte faciem tuam"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -278,16 +269,13 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "R E D D E   M I H I   L A E T I T I A M"
-    }
-    \tocSection "5" "Redde mihi laetitiam"
-    \paper { systems-per-page = #3 }
+    \section "5" "Redde mihi lætitiam"
+    \addTocEntry
+    \paperFourStaves
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "clno" "(C)" }
+          \set Staff.instrumentName = \transposedNameShort "clno" "C" ""
           \ReddeClarino
         }
         \new ChoirStaff <<
@@ -317,16 +305,9 @@
     }
   }
   \bookpart {
-    \header {
-      number = "6"
-      title = "Q U O N I A M   S I   V O L U I S S E S"
-    }
-    \tocSection "6" "Quoniam si voluisses"
-    \paper {
-      system-system-spacing.basic-distance = #25
-      system-system-spacing.minimum-distance = #25
-      systems-per-page = #2
-    }
+    \section "6" "Quoniam si voluisses"
+    \addTocEntry
+    \paperFiveStaves
     \score {
       <<
         \new ChoirStaff <<
@@ -368,12 +349,9 @@
     }
   }
   \bookpart {
-    \header {
-      number = "7"
-      title = "B E N I G N E   F A C"
-    }
-    \tocSection "7" "Benigne fac"
-    \paper { systems-per-page = #2 }
+    \section "7" "Benigne fac"
+    \addTocEntry
+    \paperSixStaves
     \score {
       <<
         \new StaffGroup <<
@@ -420,11 +398,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "8"
-      title = "G L O R I A   P A T R I"
-    }
-    \tocSection "8" "Gloria Patri"
+    \section "8" "Gloria Patri"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<

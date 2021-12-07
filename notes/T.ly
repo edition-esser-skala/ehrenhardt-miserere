@@ -1,16 +1,5 @@
 \version "2.22.0"
 
-TenoreIncipit = \markup {
-  "Tenore" \hspace #-18.2 \score {
-    \new Staff \with {
-      \remove Time_signature_engraver
-    } {
-      \clef tenor s4 \bar empty
-    }
-    \layout { }
-  } \hspace #-1.8
-}
-
 MiserereTenoreNotes = {
   \relative c' {
     \clef "treble_8"
@@ -640,7 +629,7 @@ GloriaTenoreLyrics = \lyricmode {
   _
   _
   men, a --
-  
+
   men, %655
   a -- \xE men, a --
   \x men. %657 FINIS

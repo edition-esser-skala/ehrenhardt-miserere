@@ -1,17 +1,20 @@
-composer: Ehrenhardt, Johann Franz
+composer:
+  last: Ehrenhardt
+  first: Johann Franz
 title: Miserere
-id: (A-Ed B 26)
 genre: psalm
-scoring: S, A, T, B (solo), S, A, T, B (coro), cor da caccia (Es), clno (C), 2 trb, 2 vl, vla, b, org
+scoring: S, A, T, B (solo), S, A, T, B (coro), cor da caccia (\flat E),\\clno (C), 2 trb, 2 vl, vla, b, org
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: B 26
-    type: manuscript copy
-    date: unknown
     rism: 600038001
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/762.html
+    license: public domain
+    principal: true
 github: ehrenhardt-miserere
 imslp: Miserere_(Ehrenhardt,_Johann_Franz)
-notes:
-
+parts:
+  cor_da_caccia: Corno da caccia solo in \flat E
+  clno: Clarino solo in C
